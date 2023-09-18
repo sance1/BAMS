@@ -1,0 +1,142 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration _config
+
+@inject ITextService PageText
+@{
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+    var countries = ViewBag.Countries as List<Country>;
+    var provinces = ViewBag.Provinces as List<Province>;
+}
+
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Project_txt_project_list", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el"/>
+</div>
+
+<button class="btn-orange btn-icon" onclick="newProject()">
+    <img src="~/img/icon/create-project.png"/> @PageText.GetHtml("Project_btn_new_project", clientLanguage)
+</button>
+
+<div class="tbl-general tbl-spc pg-project">
+    <table id="tbl" class="display tbl-padding">
+        <thead>
+        <tr>
+            <th>@PageText.GetHtml("Project_tbl_no", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_project_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_project_area", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_8elements_PIC", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_partner_PIC", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_contracts", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_districts", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_schools", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_notes", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_actions", clientLanguage)</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr class="search">
+            <th no-search>@PageText.GetHtml("Project_tbl_no", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_project_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_project_area", clientLanguage)</th>
+            <th>@PageText.GetHtml("Project_tbl_8elements_PIC", clientLanguage)</th>
+            <th class="th-large">@PageText.GetHtml("Project_tbl_partner_PIC", clientLanguage)</th>
+            <th class="th-small">@PageText.GetHtml("Project_tbl_contracts", clientLanguage)</th>
+            <th class="th-small">@PageText.GetHtml("Project_tbl_districts", clientLanguage)</th>
+            <th class="th-small">@PageText.GetHtml("Project_tbl_schools", clientLanguage)</th>
+            <th class="th-large">@PageText.GetHtml("Project_tbl_notes", clientLanguage)</th>
+            <th no-search class="th-sm">@PageText.GetHtml("Project_tbl_actions", clientLanguage)</th>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-project">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="editor-title" class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <input type="hidden" id="uid" />
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Project_form_txt_application_name", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <select id="appId" class="form-control">
+                                    <option value="668275098182331">Bibalala</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Project_form_txt_project_name", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                @*<input class="form-control" type="text" id="name" autocomplete="off" />*@
+                                    <select id="countryId" class="form-control">
+                                        <option value="">Choose Country</option>
+                                        @foreach (var country in countries)
+                                        {
+                                            <option value="@country.Id">@country.Name</option>
+                                        }
+                                    </select>     
+                                
+                                    <select id="level" class="form-control">
+                                    </select>
+                                
+                                    <select id="provinceId" class="form-control">                     
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Project_form_txt_project_area", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="partnerName" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Project_form_txt_8elements_PIC", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="contactPerson" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Project_form_txt_Partner_PIC", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="partnerPIC" autocomplete="off" />
+                            </div>
+                        </div>
+                        @*<div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Country</label>
+                            
+                        </div>*@
+                        @*<div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Province</label>
+                            
+                        </div>*@
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Project_form_txt_remark", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="remarks" autocomplete="off" />
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn-green" onclick="saveProject()" type="button">@PageText.GetHtml("Project_form_btn_save", clientLanguage)</button>
+                            <button class="btn-grey" onclick="hideEditor()" type="button">@PageText.GetHtml("Project_form_btn_cancel", clientLanguage)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/core/project.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+}

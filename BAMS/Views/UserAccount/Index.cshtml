@@ -1,0 +1,244 @@
+﻿@using BAMS.Data.Models
+@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+
+@inject ITextService PageText
+@inject IConfiguration _config
+@{
+    var data = (UserAccount) ViewData["Student"];
+    long uid = data?.Uid ?? 0;
+
+    var districtList = ViewData["DistrictList"] as List<District>;
+    var admUnitList = ViewData["AdmUnitList"] as List<AdministrativeUnit>;
+    int districtId = (int) ViewData["DistrictId"];
+    var admUnitId = (int)ViewData["AdmUnitId"];
+    int roleId = (int) ViewData["RoleId"];
+    int schoolId = (int) ViewData["SchoolId"];
+    int projectId = (int) ViewData["ProjectId"];
+    var projectList = ViewData["ProjectList"] as List<Project>;
+    var schoolList = ViewData["SchoolList"] as List<School>;
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+<style>
+    #drop_zone {
+    background-color: #FFE3E3;
+    border: #B980F0 5px dashed;
+    width: 100%;
+    padding : 60px 0;
+    }
+    #drop_zone p {
+        font-size: 20px;
+        text-align: center;
+        }
+        #btn_upload, #selectfile {
+        display: none;
+        }
+</style>
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Student_form_txt_student_list", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el"/>
+</div>
+
+<div class="flex btn-top_wrap">
+    <button class="btn-orange btn-icon add-student-button"><img src="~/img/icon/create-project.png" /> @PageText.GetHtml("Student_form_btn_create_student", clientLanguage)</button>
+    <div class="btn-top_right">        
+        <button onclick="openModalImport()" class=" btn-icon btn-cyan"><img src="~/img/icon/upload-code.png" /> @PageText.GetHtml("Student_form_btn_upload_students", clientLanguage)</button>
+    </div>
+</div>
+<div class="tbl-general tbl-spc">
+    <table id="user-account-list" class="display tbl-padding">
+        <thead>
+        <tr>
+            <th>@PageText.GetHtml("Student_tbl_txt_no", clientLanguage)</th>
+            <th>@PageText.GetHtml("Student_tbl_txt_id", clientLanguage)</th>
+            <th>@PageText.GetHtml("Student_tbl_txt_student_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("Student_tbl_txt_username", clientLanguage)</th>
+            <th>@PageText.GetHtml("Student_tbl_txt_class", clientLanguage)</th>
+            <th>@PageText.GetHtml("Student_tbl_txt_phone_number", clientLanguage)</th>
+            <th>@PageText.GetHtml("Student_tbl_txt_email", clientLanguage)</th>
+            <th>@PageText.GetHtml("Student_tbl_txt_account_activated", clientLanguage)</th>
+            <th>@PageText.GetHtml("Student_tbl_txt_actions", clientLanguage)</th>
+        </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>@PageText.GetHtml("Student_tbl_txt_no", clientLanguage)</th>
+                <th>@PageText.GetHtml("Student_tbl_txt_id", clientLanguage)</th>
+                <th>@PageText.GetHtml("Student_tbl_txt_student_name", clientLanguage)</th>
+                <th>@PageText.GetHtml("Student_tbl_txt_username", clientLanguage)</th>
+                <th>@PageText.GetHtml("Student_tbl_txt_class", clientLanguage)</th>
+                <th class="th-super-large">@PageText.GetHtml("Student_tbl_txt_phone_number", clientLanguage)</th>
+                <th>@PageText.GetHtml("Student_tbl_txt_email", clientLanguage)</th>
+                <th class="th-small">@PageText.GetHtml("Student_tbl_txt_account_activated", clientLanguage)</th>
+                <th>@PageText.GetHtml("Student_tbl_txt_actions", clientLanguage)</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="student-editor">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <form method="post" action="" id="create-form">
+                            <input id="uid" type="hidden">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("Student_form_txt_class", clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <input id="class" class="form-control" type="text" placeholder="@PageText.GetHtml("Student_form_txt_class_placeholder", clientLanguage)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("Student_form_txt_student_name", clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <input id="name" class="form-control" type="text" placeholder="@PageText.GetHtml("Student_form_txt_student_name_placeholder", clientLanguage)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("Student_form_txt_username", clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <input id="username" class="form-control" type="text" placeholder="@PageText.GetHtml("Student_form_txt_username_placeholder", clientLanguage)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("Student_form_txt_phone_number", clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <input id="phoneNumber" class="form-control number" type="number" placeholder="@PageText.GetHtml("Student_form_txt_phone_number_placeholder", clientLanguage)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("Student_form_txt_email", clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <input id="email" class="form-control" type="email" placeholder="@PageText.GetHtml("Email address", clientLanguage)">
+                                </div>
+                            </div>
+
+                            @Html.AntiForgeryToken()
+                            <div class="modal-footer">
+                                <button class="btn-green save-button" type="button">@PageText.GetHtml("Student_form_btn_save", clientLanguage)</button>
+                                <button class="btn-grey hide-editor-button" type="button" data-dismiss="modal">@PageText.GetHtml("Student_form_btn_cancel", clientLanguage)</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-import">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@PageText.GetHtml("Student_form_title_txt_upload_students", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <button onclick="location.href = '/file/Upload Student.xlsx'" class=" btn-icon btn-white"><img src="~/img/icon/download-A.png" /> @PageText.GetHtml("Student_form_txt_download_template", clientLanguage)</button>
+                </div>
+                <div class="form-group row" style="display: @(roleId > 1 ? "none" : "flex")">
+                    <label class="col-sm-2 col-form-label">@PageText.GetHtml("Student_form_txt_project", clientLanguage) </label>
+                    <div class="col-sm-10">
+                        <select id="projectId" class="form-control">
+                            <option value="">@PageText.GetHtml("Student_form_txt_choose_project", clientLanguage)</option>
+                            @foreach (var project in projectList)
+                            {
+                                if (project.Id == projectId)
+                                {
+                                    <option value="@project.Id" selected>@project.Name</option>
+                                }
+                                else
+                                {
+                                    <option value="@project.Id">@project.Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row" style="display: @(roleId > 1 ? "none" : "flex")">
+                    <label class="col-sm-2 col-form-label">@PageText.GetHtml("Student_form_txt_district", clientLanguage)</label>
+                    <div class="col-sm-10">
+                        <select id="admUnitId" class="form-control">
+                            <option value="">@PageText.GetHtml("Student_form_dropdown_choose_district", clientLanguage)</option>
+                            @foreach (var admUnit in admUnitList)
+                            {
+                                if (admUnit.Id == admUnitId)
+                                {
+                                    <option value="@admUnit.Id" selected>@admUnit.Name</option>
+                                }
+                                else
+                                {
+                                    <option value="@admUnit.Id">@admUnit.Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row" style="display: @(roleId > 1 ? "none" : "flex")">
+                    <label class="col-sm-2 col-form-label">School</label>
+                    <div class="col-sm-10">
+                        <select id="schoolId" class="form-control">
+                            <option value="">@PageText.GetHtml("Student_form_dropdown_choose_school", clientLanguage)</option>
+                            @foreach (var district in schoolList)
+                            {
+                                if (district.Id == schoolId)
+                                {
+                                    <option value="@district.Id" selected>@district.Name</option>
+                                }
+                                else
+                                {
+                                    <option value="@district.Id">@district.Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div id="drop_zone">
+                    <p>@PageText.GetHtml("Student_form_txt_drop_file_here", clientLanguage)</p>
+                    <p>@PageText.GetHtml("Student_form_txt_or", clientLanguage)</p>
+                    <p>
+                        <button type="button" id="btn_file_pick" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open"></span>  @PageText.GetHtml("Student_form_txt_select_file", clientLanguage) </button>
+                    </p>
+                    <p id="file_info"></p>
+                    <input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" id="selectfile">
+                    <p id="message_info"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-green" onclick="uploadProcess()">@PageText.GetHtml("Student_form_btn_upload", clientLanguage)</button>
+                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("Student_form_btn_cancel_whenupload", clientLanguage)</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+    <script src="~/js/core/user-account.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+    <script>
+            
+    $(document).ready(function () {
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+            });
+        let id = params.uid;
+        if (id) openModalAccount()
+        getData();
+    })
+
+    
+</script>
+}

@@ -1,0 +1,66 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration _config
+@using EightElements.Services;
+@inject ITextService PageText
+@{
+    var search = ViewData["Search"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Message_txt_inbox",clientLanguage) <a href="message/createmessage" class="btn-cyan"> @PageText.GetHtml("Message_btn_create_message",clientLanguage)</a></h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>
+
+<div class="panel-greeting flex">
+    <div class="col-4">
+
+        <div class="searchMass flex">
+            <input type="text" value="@search" id="textMailSearch" />
+            <button class="btn-orange" onclick="searchMail()"> @PageText.GetHtml("Message_txt_search",clientLanguage)</button>
+        </div>
+        @*<div class="btn-create">
+
+            </div>*@
+        <div id="inbox">
+
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="full-message" id="read-mail">
+            <div class="flex head-message">
+                <div class="col-8 no-pad">
+                    <div class="row">
+                        <div class="col-2"><strong>@PageText.GetHtml("Message_txt_from",clientLanguage)</strong></div>
+                        <div class="col-10 no-pad">
+                            <h3>: </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"><strong>@PageText.GetHtml("Message_txt_title",clientLanguage)</strong></div>
+                        <div class="col-10 no-pad">
+                            <h3>:  </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 head-right">
+                    <div class="row">
+                        <div class="col-4"><strong>@PageText.GetHtml("Message_txt_date",clientLanguage)</strong> :</div>
+                        <div class="col-8 no-pad">
+                            <span class="date">@DateTime.Now.ToString("dd/MM/yyyy H:mm:ss")</span>
+                        </div>
+                    </div>
+                    <div class="tools">
+                        <a href="#" onclick=""><i class="fa fa-forward" aria-hidden="true"></i> @PageText.GetHtml("Message_txt_forward",clientLanguage)</a>
+                        <a href="#" onclick=""><i class="fa fa-reply" aria-hidden="true"></i> @PageText.GetHtml("Message_txt_replay",clientLanguage)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script src="~/js/core/message.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+}

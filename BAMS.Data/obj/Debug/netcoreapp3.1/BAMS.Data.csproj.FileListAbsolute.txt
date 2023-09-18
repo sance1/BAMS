@@ -1,0 +1,48 @@
+D:/8 Elements New/Projek/BAMS/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.deps.json
+D:/8 Elements New/Projek/BAMS/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.dll
+D:/8 Elements New/Projek/BAMS/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.pdb
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.AssemblyReference.cache
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.AssemblyInfoInputs.cache
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.AssemblyInfo.cs
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.CoreCompileInputs.cache
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.dll
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.pdb
+D:/8 Elements New/Projek/BAMS/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.runtimeconfig.json
+D:/8 Elements New/Projek/BAMS/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.runtimeconfig.dev.json
+D:/8 Elements New/Projek/BAMS/BAMS.Data/bin/Debug/netcoreapp3.1/EightElements.Utils.dll
+D:/8 Elements New/Projek/BAMS/BAMS.Data/bin/Debug/netcoreapp3.1/EightElements.Utils.pdb
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.CopyComplete
+D:/8 Elements New/Projek/BAMS/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.genruntimeconfig.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.deps.json
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.runtimeconfig.json
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.runtimeconfig.dev.json
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/EightElements.Utils.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/EightElements.Utils.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.AssemblyReference.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.AssemblyInfoInputs.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.AssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.CoreCompileInputs.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.CopyComplete
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.genruntimeconfig.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.deps.json
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.runtimeconfig.json
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.runtimeconfig.dev.json
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/BAMS.Data.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/EightElements.Utils.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/bin/Debug/netcoreapp3.1/EightElements.Utils.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.AssemblyReference.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.AssemblyInfoInputs.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.AssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.CoreCompileInputs.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.csproj.CopyComplete
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/Debug/netcoreapp3.1/BAMS.Data.genruntimeconfig.cache

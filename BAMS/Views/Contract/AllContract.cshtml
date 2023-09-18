@@ -1,0 +1,115 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+
+@inject ITextService PageText
+@inject IConfiguration _config
+@{
+    var contractData = (Contract)ViewData["contract"];
+    var acReqData = (ActivationCodeRequest)ViewData["acReq"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+
+}
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Contract_txt_all_contracts", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>
+
+<div class="tbl-general tbl-spc allContract">
+    <table id="tbl" class="display tbl-padding">
+        <thead>
+            <tr>
+                <th>@PageText.GetHtml("Contract_tbl_txt_no", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_contract_name", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_notes", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_code_request_date", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_code_update_date", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_total_activation_codes", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_upload_activation_code", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_status", clientLanguage)</th>                
+                <th>@PageText.GetHtml("Contract_tbl_txt_id", clientLanguage)</th>
+                <th align="center">@PageText.GetHtml("Contract_tbl_txt_actions", clientLanguage)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>@PageText.GetHtml("Contract_tbl_txt_no", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_contract_name", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_notes", clientLanguage)</th>
+                <th class="th-medium">@PageText.GetHtml("Contract_tbl_txt_code_request_date", clientLanguage)</th>
+                <th class="th-medium">@PageText.GetHtml("Contract_tbl_txt_code_update_date", clientLanguage)</th>
+                <th class="th-semi-large">@PageText.GetHtml("Contract_tbl_txt_total_activation_codes", clientLanguage)</th>
+                <th class="th-super-large">@PageText.GetHtml("Contract_tbl_txt_upload_activation_code", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_status", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_id", clientLanguage)</th>
+                <th>@PageText.GetHtml("Contract_tbl_txt_actions", clientLanguage)</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-upload-ac">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@PageText.GetHtml("Contract_form_title_txt_upload_Activation", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <input type="hidden" id="acReqUid" />
+                            <input type="hidden" id="contractId" />
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract_form_txt_contract_name", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="contractName" readonly placeholder="@PageText.GetHtml("Contract_form_txt_contracts", clientLanguage)" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract_form_txt_request_date", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="requestDate" readonly placeholder="" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract_form_txt_request_code", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="requestedCodes" readonly placeholder="" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract_form_txt_remark", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="remarks" readonly placeholder="@PageText.GetHtml("Contract_form_txt_remark", clientLanguage)" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract_form_btn_upload_file", clientLanguage)</label>
+                            <div class="col-sm-8 uploading-file">
+                                <input type="button" id="click-input" value="UPLOAD FILE" onclick="document.getElementById('file_upload').click();" />
+                                <span class="format-file">@PageText.GetHtml("Contract_form_txt_format_file",clientLanguage)</span>
+                                @*<label for="click-input" id="file-name">@PageText.GetHtml("No file chosen", clientLanguagelabel>*@
+                                <input class="form-control" type="file" id="file_upload" accept=".csv" style="display:none;" />
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn-green" type="submit" onclick="saveUpload()">@PageText.GetHtml("Contract_form_btn_save", clientLanguage)</button>
+                            <button class="btn-grey" onclick="closeModalUpload()">@PageText.GetHtml("Contract_form_btn_cancel", clientLanguage)</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/core/all-contract.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+}

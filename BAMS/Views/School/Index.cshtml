@@ -1,0 +1,852 @@
+﻿@using BAMS.Data.Models
+@using BAMS.Models
+@using EightElements.Services;
+
+@inject ITextService PageText
+
+@{
+    //var districtData = (District) ViewData["district"];
+    var admUnitData = (District) ViewData["admUnit"];
+    var school = (School) ViewData["School"];
+    long uid = school?.Uid ?? 0;
+
+    //var districtList = ViewData["DistrictList"] as List<District>;
+    //long districtUid = (long) ViewData["DistrictUid"];
+    //int districtId = (int) ViewData["DistrictId"];
+
+    var admUnitList = ViewData["AdmUnitList"] as List<AdministrativeUnit>;
+    var admUnitId = (int)ViewData["AdmUnitId"];
+
+    int roleId = (int) ViewData["RoleId"];
+    int projectId = (int) ViewData["ProjectId"];
+
+    var projectList = ViewData["ProjectList"] as List<Project>;
+    var schoolList = ViewData["SchoolList"] as List<ReadSchoolDto>;
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+<style>
+    #drop_zone {
+    background-color: #FFE3E3;
+    border: #B980F0 5px dashed;
+    width: 100%;
+    padding : 60px 0;
+    }
+    #drop_zone p {
+        font-size: 20px;
+        text-align: center;
+        }
+        #btn_upload, #selectfile {
+        display: none;
+        }
+</style>
+
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("School_txt_school_list", clientLanguage) @admUnitData?.Name</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el"/>
+</div>
+<div class="flex btn-top_wrap">
+    <button class="btn-orange add-school-button btn-icon"><img src="~/img/icon/create-project.png" /> @PageText.GetHtml("School_btn_new_school", clientLanguage)</button>
+    <div class="btn-top_right">        
+        <button onclick="openModalImport()" class="btn-cyan btn-icon"><img src="~/img/icon/upload-code.png" /> @PageText.GetHtml("School_btn_upload_schools", clientLanguage)</button>
+    </div>
+</div>
+<div class="tbl-general tbl-spc pg-school">
+    <table id="school-list" class="display tbl-padding">
+        <thead>
+        <tr>
+            <th>@PageText.GetHtml("School_tbl_txt_no", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_school_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_district_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_address", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_PIC", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_number_of_students", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_activation_codes", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_notes", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_actions", clientLanguage)</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>@PageText.GetHtml("School_tbl_txt_no", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_school_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_district_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_address", clientLanguage)</th>
+            <th class="th-medium">@PageText.GetHtml("School_tbl_txt_PIC", clientLanguage)</th>
+            <th class="th-medium">@PageText.GetHtml("School_tbl_txt_number_of_students", clientLanguage)</th>
+            <th class="th-large">@PageText.GetHtml("School_tbl_txt_activation_codes", clientLanguage)</th>
+            <th class="th-medium">@PageText.GetHtml("School_tbl_txt_notes", clientLanguage)</th>
+            <th>@PageText.GetHtml("School_tbl_txt_actions", clientLanguage)</th>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="school-editor">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <input type="hidden" id="uid" value="@uid"/>
+
+                        <div class="form-school">
+                            @*<div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("School_form_txt_district", clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <select id="districtUid" class="form-control">
+                                        @foreach (var district in districtList)
+                                        {
+                                            <option value="@district.Uid">@district.Name</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>*@
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("School_form_txt_district", clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <select id="admUnitUid" class="form-control">
+                                        @foreach (var admUnit in admUnitList)
+                                        {
+                                            <option value="@admUnit.Uid">@admUnit.Name</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("School_form_txt_school_name", clientLanguage) </label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="name" value="@school?.Name" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("School_form_txt_PIC", clientLanguage) </label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="picName" value="@school?.PIC" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("School_form_txt_address", clientLanguage) </label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="address" value="@school?.Address" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("School_form_txt_student", clientLanguage) </label>
+                                <div class="col-sm-8">
+                                    <input type="number" id="students" value="@school?.Students" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@PageText.GetHtml("School_form_txt_remark", clientLanguage) </label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="remarks" value="@school?.Remarks" class="form-control"/>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn-green save-button" type="button">@PageText.GetHtml("School_form_btn_save", clientLanguage)</button>
+                                <button class="btn-grey hide-editor-button" type="button">@PageText.GetHtml("School_form_btn_cancel", clientLanguage)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-allocate">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@PageText.GetHtml("School_form_title_allocate_school", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="ACschool" class="col-sm-2 col-form-label">@PageText.GetHtml("School_form_txt_school", clientLanguage)</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ACschool" placeholder="" value="" readonly>
+                                <input type="hidden" id="schoolUid" value=""/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="qty" class="col-sm-2 col-form-label">@PageText.GetHtml("School_form_txt_quantity", clientLanguage)</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="qty" placeholder="" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-green" onclick="go_allocate()">@PageText.GetHtml("School_form_btn_save_allocate_school", clientLanguage)</button>
+                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("School_form_btn_cancel_allocate_school", clientLanguage)</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="modal-allocate-general">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@PageText.GetHtml("School_form_title_allocate_school_general", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="ACschool" class="col-sm-2 col-form-label">@PageText.GetHtml("School_form_txt_school_general", clientLanguage)</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="schoolUid-sel">
+                                    @foreach(var sch in schoolList)
+                                    {
+                                        <option value="@sch.Uid">@sch.Name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="qty" class="col-sm-2 col-form-label">@PageText.GetHtml("School_form_txt_quantity_general", clientLanguage)</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="qty-sel" placeholder="" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-green" onclick="go_allocate(true)">@PageText.GetHtml("School_form_btn_save_general", clientLanguage)</button>
+                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("School_form_btn_cancel_general", clientLanguage)</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="modal-import">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@PageText.GetHtml("School_form_title_upload_school", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <button onclick="location.href = '/file/Upload School.xlsx'" class="btn-white btn-icon"><img src="~/img/icon/download-A.png" /> @PageText.GetHtml("School_form_title_download_template", clientLanguage)</button>
+                </div>
+                <div class="form-group row" style="display: @(roleId > 1 ? "none" : "flex")">
+                    <label class="col-sm-2 col-form-label">@PageText.GetHtml("School_form_txt_project", clientLanguage) </label>
+                    <div class="col-sm-10">
+                        <select id="projectId" class="form-control">
+                            <option value="">@PageText.GetHtml("School_form_dropdown_choose_project", clientLanguage)</option>
+                            @foreach (var project in projectList)
+                            {
+                                if (project.Id == projectId)
+                                {
+                                    <option value="@project.Id" selected>@project.Name</option>
+                                }
+                                else
+                                {
+                                    <option value="@project.Id">@project.Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row" style="display: @(roleId > 1 ? "none" : "flex")">
+                    <label class="col-sm-2 col-form-label">@PageText.GetHtml("School_form_txt_district_whenupload", clientLanguage)</label>
+                    <div class="col-sm-10">
+                        <select id="admUnitId" class="form-control">
+                            <option value="">@PageText.GetHtml("School_form_dropdown_choose_district", clientLanguage)</option>
+                            @foreach (var admUnit in admUnitList)
+                            {
+                                if (admUnit.Id == admUnitId)
+                                {
+                                    <option value="@admUnit.Id" selected>@admUnit.Name</option>
+                                }
+                                else
+                                {
+                                    <option value="@admUnit.Id">@admUnit.Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div id="drop_zone">
+                    <p>@PageText.GetHtml("School_form_txt_drop_file", clientLanguage)</p>
+                    <p>@PageText.GetHtml("School_form_txt_or", clientLanguage)</p>
+                    <p>
+                        <button type="button" id="btn_file_pick" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open"></span> @PageText.GetHtml("School_form_txt_select_file", clientLanguage)</button>
+                    </p>
+                    <p id="file_info"></p>
+                    <input type="file" id="selectfile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                    <p id="message_info"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-green" onclick="uploadProcess()">@PageText.GetHtml("School_form_btn_upload", clientLanguage)</button>
+                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("School_form_btn_cancel_whenupload", clientLanguage)</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+    <script>
+        var fileObj;
+        var rawXls;
+        $("#drop_zone").on("dragover", function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+        });
+        $("#drop_zone").on("drop", function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          var tmp = event.originalEvent.dataTransfer.files[0];
+                if (tmp.type !== "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"){
+                    Swal.fire('Failed!','@PageText.GetHtml("School_form_popup_txt_invalid_format", clientLanguage)','error')
+                    return;
+                }
+          fileobj = event.originalEvent.dataTransfer.files[0];
+          var fname = fileobj.name;
+          var fsize = fileobj.size;
+          if (fname.length > 0) {
+             document.getElementById('file_info').innerHTML = "File name : " + fname +' <br>File size : ' + bytesToSize(fsize);
+          }
+          document.getElementById('selectfile').files[0] = fileobj;
+          // document.getElementById('btn_upload').style.display="inline";
+        });
+        $('#btn_file_pick').click(function(){
+          /*normal file pick*/
+          document.getElementById('selectfile').click();
+          document.getElementById('selectfile').onchange = function() {
+              var tmp = document.getElementById('selectfile').files[0];
+                              if (tmp.type !== "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"){
+                                  Swal.fire('Failed!','@PageText.GetHtml("School_form_popup_txt_invalid_format", clientLanguage)','error')
+                                  return;
+                              }
+              fileobj = document.getElementById('selectfile').files[0];
+              var fname  = fileobj.name;
+              var fsize = fileobj.size;
+              if (fname.length > 0) {
+                 document.getElementById('file_info').innerHTML = "File name : " + fname +' <br>File size : ' + bytesToSize(fsize);
+              }
+          // document.getElementById('btn_upload').style.display="inline";
+          };
+        });
+        function bytesToSize(bytes) {
+        var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+        if (bytes == 0) return '0 Byte';
+        var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+        return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+        }
+
+        function uploadProcess(){
+            if(fileobj){
+                let fileReader = new FileReader();
+                fileReader.readAsBinaryString(fileobj);
+                fileReader.onload = (event)=>{
+                    let data = event.target.result;
+                    let workbook = XLSX.read(data,{type:"binary"});
+                    workbook.SheetNames.forEach(sheet => {
+                            rawXls = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheet]);
+                    });
+                    uploadSchool()
+                }
+            }
+        }
+        function uploadSchool() {
+            var url = '/School/UploadSchools';
+            var admUnitId = $("#admUnitId").val()
+            var projectId = $("#projectId").val()
+            Swal.showLoading()
+
+            $.ajax({
+            type: 'POST',
+            url: url,
+            data: {
+                rawXls: JSON.stringify(rawXls),
+                projectId,
+                admUnitId
+            },
+            datatype: "json",
+            traditional: true,
+            success: function (response) {
+                if (response.status === 0){
+                    Toast.fire({
+                        icon: 'success',
+                        title: "@PageText.GetHtml("School_toast_txt_uploaded_successfully", clientLanguage)"
+                    });
+                    setTimeout(function () {
+                        location.reload()
+                    }, 1000)
+                }else {
+                    Swal.fire('Failed', response.message, 'error');
+                    $("#selectfile").val('');
+                    $("#file_info").html('');
+                }
+            },
+            error: function (response) {}
+            });
+        }
+        function openModalImport() {
+            $("#modal-import").modal("show");
+            $("#selectfile").val('');
+            $("#file_info").html('');
+        }
+
+    $(document).ready(function () {
+
+        bindButtons();
+
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+            });
+        let act = params.act;
+        switch(act){
+            case "new":
+                newSchool();
+                break;
+            case "allocate":
+                openAllocateModal();
+                break;
+        }
+
+        var columnCount = 0;
+
+        var tbl = $('#school-list').DataTable({
+            initComplete: onInitTableComplete,
+            dom: 'lrtp',
+            ordering: true,
+            processing: true,
+            serverSide: true,
+            filter: true,
+            ajax: {
+                url: "/School/GetListSchool",
+                type: "POST",
+                datatype: "json"
+            },
+            columns: [
+                { data: null, name: "No", autoWidth: true, orderable: false},
+                { data: "Name", name: "Name", autoWidth: true },
+                { data: "DistrictName", name: "DistrictName", autoWidth: true },
+                { data: "Address", name: "Address", autoWidth: true },
+                { data: "PIC", name: "PIC", autoWidth: true },
+                { data: "Students", name: "Students", autoWidth: true },
+                { data: "ActivationCodes", name: "ActivationCodes", autoWidth: true },
+                { data: "Remarks", name: "Remarks", autoWidth: true },
+                { data: null, name: "Action", autoWidth: true, orderable: false },
+                { data: "Id", name: "Id", "visible": false },
+            ],
+            columnDefs: [
+                {
+                    targets: 0,
+                    render: function (data, type, row, meta) {
+                        return meta.row + meta.settings._iDisplayStart + 1;
+                    }
+                },
+                {
+                    targets: -2,
+                    render: function (data, type, row, meta) {
+                        let str = '';
+                        if (data.Students > data.ActivationCodes) {
+                            str += `<button class="btn-aw light_blue" onclick="allocate(this, '${data.Uid}')" ><img src="/img/icon/distribute-activation-code.png" /> <span class="tooltipText">@PageText.GetHtml("School_btn_tooltip_allocate_codes", clientLanguage)</span></button>`;
+                        }
+                        else {
+                            str += `<button class="btn-aw disable"><img src="/img/icon/create-contract.png" /> <span class="tooltipText">@PageText.GetHtml("School_btn_tooltip_allocate_codes", clientLanguage)</span></button>`;
+                        }
+                        str += `<button class="btn-aw edit" onclick="editSchool('${data.Uid}')" ><img src="/img/icon/edit.png" /> <span class="tooltipText">@PageText.GetHtml("School_btn_tooltip_edit", clientLanguage)</span></button>`;
+                        if(data.ActivationCodes > 0){
+                            str += `<button class="btn-aw disable" ><img src="/img/icon/delete.png" /> <span class="tooltipText">@PageText.GetHtml("School_btn_tooltip_delete", clientLanguage)</span></button>`;
+                        }else {
+                            str += `<button class="btn-aw delete" onclick="deleteSchool('${data.Uid}')" ><img src="/img/icon/delete.png" /> <span class="tooltipText">@PageText.GetHtml("School_btn_tooltip_delete", clientLanguage)</span></button>`;
+                        }
+                        return str;
+                    }
+                }
+            ]
+        });
+
+    });
+        
+    function onInitTableComplete() {
+        let remarksIndex = -1;
+        $('#school-list tfoot th').each(function (i) {
+            var title = $(this).text();
+            if (title == "Remarks") remarksIndex = i;
+            $(this).html('<input type="text" class="Search' + title + '" placeholder="@PageText.GetHtml("School_tbl_txt_search", clientLanguage)" />');
+            if (title == "Actions" || title == "No") {
+                $(this).html("");
+            }
+        });
+        $('#school-list tbody tr').each(function () {
+                            $('td',this).each(function(i) {
+                                var value = $(this).text();
+                                if (!isNaN(+value) && i > 0 && i != remarksIndex){
+                                    $(this).addClass('text-right')
+                                }
+                            })
+                        });
+        
+        this.api().columns().every(function () {
+            var that = this;
+            if(this.footer() != null){
+                $('input', this.footer()).on('keyup change clear', delay(function () {
+                    if (that.search() !== this.value) {
+                        that.search(this.value).draw();
+                    }
+                }));
+            }
+        });
+        
+        var r = $('#school-list tfoot tr');
+        r.find('th').each(function () {
+            $(this).css('padding', 8);
+        });
+        $('#school-list thead').append(r);
+        $('#search_0').css('text-align', 'center');
+    }
+
+    function allocate(obj, id){
+        var row = $(tbl).DataTable().rows().data().toArray().find(a => a.Uid == id);
+        $("#ACschool").val(row.Name);
+        $("#schoolUid").val(row.Uid);
+        $("#qty").val(row.Students);
+        $("#modal-allocate").modal("show");
+    }
+
+    function openAllocateModal(){
+        $("#qty-sel").val("");
+        $("#modal-allocate-general").modal("show");
+    }
+
+    function go_allocate(isGeneral=false){
+        let uid = $("#schoolUid").val();
+        let qty = parseInt($("#qty").val());
+
+        if(isGeneral){
+            uid = $("#schoolUid-sel").val();
+            qty = parseInt($("#qty-sel").val());
+        }
+
+        if(qty <= 0){
+            Swal.fire({
+                title: 'Error',
+                text: '@PageText.GetHtml("School_popup_more_than_0",clientLanguage)',
+                icon: 'error'
+            });
+            return;
+        }
+
+        let url = `/school/allocatecode?schoolUid=${uid}&qty=${qty}`;
+
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "json",
+            success: function (response) {
+                if (response.status == 0) {
+                    Swal.fire({
+                        title: 'Success',
+                        text: response.message,
+                        icon: 'success'
+                    }).then((result) => {
+                        reloadList();
+                    });
+                }
+
+            },
+            error: function (response) {
+                Swal.fire({
+                    title: 'Error',
+                    text: response.responseJSON.message,
+                    icon: 'error'
+                });
+            }
+        });
+    }
+
+    /********************/
+
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true
+    });
+
+    function bindButtons() {
+        $('.add-school-button').click(newSchool);
+        $('#school-editor .save-button').click(saveDistrict);
+        $('#school-editor .hide-editor-button').click(hideEditor);
+    }
+
+    function reloadList() {
+        $('#school-list').DataTable().ajax.reload(null, false);
+    }
+
+    function initEditor() {
+        $("#uid").val(0);
+        $("#districtUid").val(0);
+        $("#name").val('');
+        $("#picName").val('');
+        $("#address").val('');
+        $("#students").val('');
+        $("#remarks").val('');
+    }
+
+    function showEditor() {
+        $('#school-editor').modal('show');
+    }
+
+    function hideEditor(){
+        $("#school-editor").modal("hide");
+        initEditor();
+    }
+
+    function setEditorTitle(title) {
+        $('#school-editor .modal-title').text(title);
+    }
+
+    function newSchool(districtUid) {
+        initEditor();
+        setEditorTitle("New School");
+        $('#districtUid').val(districtUid);
+        showEditor();
+    }
+
+    function editSchool(uid) {
+        initEditor();
+
+        $.ajax({
+            type: "GET",
+            url: `/get-school/${uid}`,
+            dataType: "json",
+            success: function (response) {
+                if (response.status != 'OK') {
+                    if (response.message == null) {
+                        response.message = "Failed";
+                    }
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.message,
+                        icon: 'error'
+                    });
+                    return;
+                }
+
+                let school = response.school;
+                setEditorTitle("@PageText.GetHtml("School_form_title_edit_school",clientLanguage)");
+                $('#uid').val(school.uid);
+                $('#districtUid').val(school.districtUid);
+                $('#admUnitUid').val(school.admUnitUid);
+                $('#name').val(school.name);
+                $('#address').val(school.address);
+                $('#students').val(school.students);
+                $('#picName').val(school.picName);
+                $('#remarks').val(school.remarks);
+
+                showEditor();
+            },
+            error: function (response) {
+                if (response.message == null) {
+                    response.message = "Edit School Function Error";
+                }
+                Swal.fire({
+                    title: 'Error',
+                    text: response.message,
+                    icon: 'error'
+                });
+            }
+        });
+    }
+
+    function deleteSchool(uid) {
+        Swal.fire({
+            title: '@PageText.GetHtml("School_popup_txt_delete_confirmation",clientLanguage)',
+            text: '@PageText.GetHtml("School_popup_txt_sure_want_to_delete",clientLanguage)',
+            icon: 'warning',
+            showDenyButton: true,
+            confirmButtonText: 'Yes'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    type: "GET",
+                    url: `/delete-school/${uid}`,
+                    dataType: "json",
+                    success: function (response) {
+                        console.log(response);
+                        if (response.status == 'OK') {
+                            reloadList();
+                            Toast.fire({
+                                icon: 'success',
+                                title: '@PageText.GetHtml("School_popup_txt_has_been_deleted_success",clientLanguage)'
+                            })
+                            return;
+                        }
+                        Swal.fire({
+                            title: 'Failed',
+                            text: response.message,
+                            icon: 'success'
+                        });
+                    },
+                    error: function (response) {
+                        if(response.message == null) @PageText.GetHtml("Failed", clientLanguage);
+                        Swal.fire({
+                            title: 'Error',
+                            text: response.message,
+                            icon: 'error'
+                        });
+                    }
+                });
+            }
+        });
+    }
+
+    function saveDistrict(){
+
+        let uid = parseInt($("#uid").val());
+
+        let school = {
+            uid: uid,
+            districtUid: parseInt($("#districtUid").val()),
+            admUnitUid: parseInt($("#admUnitUid").val()),
+            name: $("#name").val(),
+            address: $("#address").val(),
+            students: parseInt($("#students").val()),
+            pic: $("#picName").val(),
+            remarks: $("#remarks").val(),
+        };
+
+        let validationResult = validateInput(school)
+        if (validationResult.length > 0) {
+            Swal.fire({
+                title: '@PageText.GetHtml("School_popup_txt_data_validation",clientLanguage)',
+                html: validationResult.join('<br>'),
+                icon: 'error'
+            });
+            return;
+        }
+
+        let url = uid == 0
+            ? '@Url.Action("Create", "School")'
+            : '@Url.Action("Update", "School")';
+
+        sendRequest(url, JSON.stringify(school));
+    }
+
+
+    function validateInput(input) {
+        let err = [];
+        if(input.Name == ""){
+            err.push("@PageText.GetHtml("School_popup_txt_name_cannot_empty", clientLanguage)");
+        }
+        if(input.PIC == ""){
+            err.push("@PageText.GetHtml("School_popup_txt_pic_cannot_empty",clientLanguage)");
+        }
+        if(input.Students <= 0){
+            err.push("@PageText.GetHtml("School_popup_txt_student_cannot_empty",clientLanguage)");
+        }
+        return err;
+    }
+
+    function sendRequest(url, payload) {
+        Swal.showLoading();
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json",
+            data: payload,
+            success: function (response) {
+                Swal.close();
+                if (response.status == 'OK') {
+                    reloadList();
+                    hideEditor();
+                    Toast.fire({
+                        icon: 'success',
+                        title: '@PageText.GetHtml("School_toast_txt_school_save_success",clientLanguage)'
+                    });
+                    return;
+                }
+                Swal.fire({
+                    title: 'Error',
+                    text: response.message,
+                    icon: 'error'
+                });
+            },
+            error: function(response){
+                Swal.fire({
+                    title: 'Error',
+                    text: response.responseJSON.message,
+                    icon: 'error'
+                });
+            }
+        });
+    }
+
+
+
+    $('#school-editor').on('hidden.bs.modal', function () {
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        let id = params.uid;
+        if (id)location.href = '/School'
+    });
+
+    $("#projectId").change((e) => {
+        getAdmUnit($("#projectId").val());
+    });
+
+    function getDistrict(projectId) {
+        $.getJSON(`/account/GetDistrict?projectId=${projectId}`, (res) => {
+            var opt = '';
+            for (let i = 0; i < res.length; i++) {
+                opt += `<option value='${res[i].Id}'>${res[i].Name}</option>`;
+            }
+            $("#districtId").html(opt);
+        });
+    }
+
+    function getAdmUnit(projectId) {
+        $.getJSON(`/account/GetAdmUnit?projectId=${projectId}`, (res) => {
+            var opt = '';
+            for (let i = 0; i < res.length; i++) {
+                opt += `<option value='${res[i].Id}'>${res[i].Name}</option>`;
+            }
+            $("#admUnitId").html(opt);
+        });
+    }
+
+
+    </script>
+}

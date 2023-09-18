@@ -1,0 +1,247 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Services/EightElements.Services.csproj": {}
+  },
+  "projects": {
+    "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/BAMS.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/BAMS.Data.csproj",
+        "projectName": "BAMS.Data",
+        "projectPath": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/BAMS.Data.csproj",
+        "packagesPath": "/Users/sanceaenulyakin/.nuget/packages/",
+        "outputPath": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sanceaenulyakin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Utils/EightElements.Utils.csproj": {
+                "projectPath": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Utils/EightElements.Utils.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Localization": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Z.EntityFramework.Plus.EFCore": {
+              "target": "Package",
+              "version": "[5.14.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Services/EightElements.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Services/EightElements.Services.csproj",
+        "projectName": "EightElements.Services",
+        "projectPath": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Services/EightElements.Services.csproj",
+        "packagesPath": "/Users/sanceaenulyakin/.nuget/packages/",
+        "outputPath": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sanceaenulyakin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/BAMS.Data.csproj": {
+                "projectPath": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS.Data/BAMS.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Html.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Utils/EightElements.Utils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Utils/EightElements.Utils.csproj",
+        "projectName": "EightElements.Utils",
+        "projectPath": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Utils/EightElements.Utils.csproj",
+        "packagesPath": "/Users/sanceaenulyakin/.nuget/packages/",
+        "outputPath": "/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/EightElements.Utils/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sanceaenulyakin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "libphonenumber-csharp": {
+              "target": "Package",
+              "version": "[8.12.55, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

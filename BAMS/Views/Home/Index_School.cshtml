@@ -1,0 +1,49 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+
+@inject ITextService PageText
+
+@{
+    var school = (School)ViewData["school"];
+    var logo = school?.Logo ?? "default.png";
+    var activatedUser = (int)ViewData["activatedUser"];
+    var realTimeLogin = (int)ViewData["realTimeLogin"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+@*<div class="title-page flex">
+    <h2>@PageText.GetHtml("Home", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>*@
+<div class="panel-greeting flex">
+    <div class="col-3">
+        <img src="~/img/content/tutwuri.png" class="logo-admin"/>
+    </div>
+    <div class="col-9">
+        <div class="welcoming-text">
+            @PageText.GetHtml("Home_school_txt_welcome_message", clientLanguage)
+            <h2>@school?.Name</h2>
+        </div>
+        <div class="count-wrap flex">
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@activatedUser</h3>
+                    @PageText.GetHtml("Home_school_txt_activated_student", clientLanguage)
+                </div>
+                <button class="btn-orange" onclick="location.href='/useraccount'"><i class="fab fa-gitter"></i> @PageText.GetHtml("Home_school_btn_create_student", clientLanguage) </button>
+            </div>
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@realTimeLogin</h3>
+                    @PageText.GetHtml("Home_school_txt_real_time", clientLanguage) 
+                </div>
+                <button class="btn-orange" onclick="location.href='/report'"><i class="far fa-file-alt"></i> @PageText.GetHtml("Home_school_btn_student_progress_report", clientLanguage) </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="img-bottom flex">
+    <img src="~/img/content/BIBALALA-Dashboard-image.jpg" />
+</div>
+

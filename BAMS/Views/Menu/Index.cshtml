@@ -1,0 +1,118 @@
+@using BAMS.Data.Models
+@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+
+@inject ITextService PageText
+@inject IConfiguration _config
+@{
+    var id = ViewBag.Id;
+    var data = ViewBag.Menu as AccessPermission;
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+    var createMenu = PageText.GetHtml("Access_permissions_form_title_create_menu", clientLanguage);
+    var updateMenu = PageText.GetHtml("Access_permissions_form_title_update_menu", clientLanguage);
+    var update = PageText.GetHtml("Access_permissions_form_btn_update",clientLanguage);
+    var create = PageText.GetHtml("Access_permissions_form_btn_create",clientLanguage);
+}
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Access_permissions_txt_access_permissions", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>
+
+<a class="btn-orange btn-icon" href="javascript:void(0)" onclick="openModalMenu()"><img src="~/img/icon/create-project.png" /> @PageText.GetHtml("Access_permissions_btn_create_access_permission", clientLanguage)</a>
+<div class="tbl-general tbl-spc">
+    <table id="menu-list" class="display tbl-padding">
+        <thead>
+            <tr>
+                <th class="id" style="width: 10px">@PageText.GetHtml("Access_permissions_tbl_txt_id", clientLanguage)</th>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_name", clientLanguage)</th>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_group", clientLanguage)</th>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_permission", clientLanguage)</th>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_actions", clientLanguage)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_id", clientLanguage)</th>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_name", clientLanguage)</th>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_group", clientLanguage)</th>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_permission", clientLanguage)</th>
+                <th>@PageText.GetHtml("Access_permissions_tbl_txt_actions", clientLanguage)</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-menu">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@(id > 0 ? updateMenu : createMenu)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <form method="post" action="" id="create-form">
+                            <input type="hidden" name="id" id="id" value="@id" placeholder="id">
+                            <div class="form-group row">
+                                <label for="name" class="col-sm-3 col-form-label">@PageText.GetHtml("Access_permissions_form_txt_name", clientLanguage)</label>
+                                <div class="col-sm-9">
+                                    <input autocomplete="off" class="form-control" type="text" name="name" id="name" value="@data?.Name" placeholder="@PageText.GetHtml("Access_permissions_form_txt_name_placeholder",clientLanguage)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="group" class="col-sm-3 col-form-label">@PageText.GetHtml("Access_permissions_form_txt_group",clientLanguage)</label>
+                                <div class="col-sm-9">
+                                    <input autocomplete="off" class="form-control" type="text" name="group" id="group" value="@data?.Group" placeholder="@PageText.GetHtml("Access_permissions_form_txt_group_placeholder","en")">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="permission" class="col-sm-3 col-form-label">@PageText.GetHtml("Access_permissions_form_txt_permission", clientLanguage)</label>
+                                <div class="col-sm-9">
+                                    <input autocomplete="off" class="form-control" type="number" name="permission" id="permission" value="@data?.Permission" placeholder="@PageText.GetHtml("Access_permissions_form_txt_permission_placeholder",clientLanguage)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="permission" class="col-sm-3 col-form-label">@PageText.GetHtml("Access_permissions_form_txt_url",clientLanguage)</label>
+                                <div class="col-sm-9">
+                                    <input  autocomplete="off" class="form-control" type="text" name="menuUrl" id="menuUrl" value="@data?.MenuUrl" placeholder="@PageText.GetHtml("Access_permissions_form_txt_url_placeholder",clientLanguage)" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="permission" class="col-sm-3 col-form-label">@PageText.GetHtml("Access_permissions_form_txt_menu_order",clientLanguage)</label>
+                                <div class="col-sm-9">
+                                    <input autocomplete="off" class="form-control" type="text" name="menuOrder" id="menuOrder" value="@data?.MenuOrder" placeholder="@PageText.GetHtml("Access_permissions_form_txt_menu_order_placeholder",clientLanguage)" disabled>
+                                </div>
+                            </div>
+
+                            @Html.AntiForgeryToken()
+
+                            <div class="modal-footer">
+                                <button type="submit" class="btn-green">@(id > 0 ? update : create)</button>
+                                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("Access_permissions_form_btn_cancel", clientLanguage)</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/core/menu.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            const params = new Proxy(new URLSearchParams(window.location.search), {
+                get: (searchParams, prop) => searchParams.get(prop),
+            });
+            let id = params.id;
+            if (id) openModalMenu()
+            getData();
+        });
+        
+    </script>
+}

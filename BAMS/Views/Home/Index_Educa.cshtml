@@ -1,0 +1,22 @@
+﻿@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Home_educa_txt_home", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>
+
+
+<div class="panel-greeting flex">
+    <div class="educa-home">
+        <img src="/img/content/educa.jpg" class="logoEduca">
+        @PageText.GetHtml("Home_educa_txt_welcome_message","en")
+    </div>
+</div>
+<div class="img-bottom flex">
+    <img src="~/img/content/BIBALALA-Dashboard-image.jpg" />
+</div>

@@ -1,0 +1,340 @@
+﻿@using BAMS.Data.Models;
+@using BAMS.Models
+@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+
+@inject ITextService PageText
+@inject IConfiguration _config
+
+@{
+    var accounts = (List<ReadAccountDTO>) ViewData["accounts"];
+    var district = (District) ViewData["District"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+    var title = district == null ? PageText.GetHtml("District_form_title_txt_create", clientLanguage) : PageText.GetHtml("District_form_title_txt_update", clientLanguage);
+    long uid = district?.Uid ?? 0;
+
+    long projectUid = (long) ViewData["ProjectUid"];
+    int roleId = (int) ViewData["RoleId"];
+    int projectId = (int) ViewData["ProjectId"];
+    var projectList = ViewData["ProjectList"] as List<Project>;
+}
+
+<style>
+    #drop_zone {
+    background-color: #FFE3E3;
+    border: #B980F0 5px dashed;
+    width: 100%;
+    padding : 60px 0;
+    }
+    #drop_zone p {
+        font-size: 20px;
+        text-align: center;
+        }
+        #btn_upload, #selectfile {
+        display: none;
+        }
+</style>
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("District_txt_district_list", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el"/>
+</div>
+
+<div class="flex btn-top_wrap">
+    <button onclick="newDistrict()" class="btn-orange btn-icon"><img src="~/img/icon/create-project.png" /> @PageText.GetHtml("District_btn_new_district", clientLanguage)</button>
+    <div class="btn-top_right">
+        
+        <button onclick="openModalImport()" class="btn-cyan btn-icon"><img src="~/img/icon/upload-code.png" /> @PageText.GetHtml("District_btn_upload_districts", clientLanguage)</button>
+    </div>
+</div>
+<div class="tbl-general tbl-spc pg-district">
+    <table id="tbl" class="display tbl-padding">
+        <thead>
+        <tr id="thead">
+        </tr>
+        </thead>
+        <tfoot>
+        <tr id="tfoot">
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="district-editor">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <input type="hidden" id="uid" value="@uid"/>
+                        <div class="form-district col-12">
+                            <div class="form-group row" style="display: @(roleId > 1 ? "none" : "flex")">
+                                <label class="col-sm-3 col-form-label">@PageText.GetHtml("District_form_txt_projects", clientLanguage) </label>
+                                <div class="col-sm-9">
+                                    <select id="projectUid" class="form-control">
+                                        @foreach (var project in projectList)
+                                        {
+                                            if (project.Uid == projectUid)
+                                            {
+                                                <option value="@project.Uid" selected>@project.Name</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@project.Uid">@project.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">@PageText.GetHtml("District_form_txt_district_name", clientLanguage)</label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="name" value="@district?.Name" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">@PageText.GetHtml("District_form_txt_PIC", clientLanguage)</label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="picName" value="@district?.PIC" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">@PageText.GetHtml("District_popup_txt_note", clientLanguage) </label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="remarks" value="@district?.Remarks" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn-green save-button">@PageText.GetHtml("District_form_btn_save", clientLanguage)</button>
+                                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("District_form_btn_cancel", clientLanguage)</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-allocate">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@PageText.GetHtml("District_form_title_txt_allocate_code", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="ACdistrict" class="col-sm-2 col-form-label">@PageText.GetHtml("District_form_txt_district_name_allocate", clientLanguage)</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ACdistrict" placeholder="" value="" readonly>
+                                <input type="hidden" id="districtUid" value=""/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="qty" class="col-sm-2 col-form-label">@PageText.GetHtml("District_form_txt_quantity", clientLanguage)</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="qty" placeholder="" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-green" onclick="go_allocate()">@PageText.GetHtml("District_form_btn_save_allocate", clientLanguage)</button>
+                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("District_form_btn_cancel_allocate", clientLanguage)</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="modal-import">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@PageText.GetHtml("District_form_title_txt_upload_districts", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <button onclick="location.href = '/file/Upload District.xlsx'" class="btn-white btn-icon"><img src="~/img/icon/download-A.png" /> @PageText.GetHtml("District_form_txt_download_template", clientLanguage)</button>
+                </div>
+                <div class="form-group row" style="display: @(roleId > 1 ? "none" : "flex")">
+                    <label class="col-sm-2 col-form-label">@PageText.GetHtml("District_form_txt_project_inuploaddistrict", clientLanguage) </label>
+                    <div class="col-sm-10">
+                        <select id="projectId" class="form-control">
+                            <option value="">@PageText.GetHtml("District_form_dropdown_choose_project", clientLanguage) </option>
+                            @foreach (var project in projectList)
+                            {
+                                if (project.Id == projectId) 
+                                {
+                                    <option value="@project.Id" selected>@project.Name</option>
+                                }
+                                else
+                                {
+                                    <option value="@project.Id">@project.Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div id="drop_zone">
+                    <p>@PageText.GetHtml("District_form_txt_drop_file", clientLanguage)</p>
+                    <p>@PageText.GetHtml("District_form_txt_or", clientLanguage)</p>
+                    <p>
+                        <button type="button" id="btn_file_pick" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open"></span>  @PageText.GetHtml("District_form_txt_select_file", clientLanguage)</button>
+                    </p>
+                    <p id="file_info"></p>
+                    <input type="file" id="selectfile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                    <p id="message_info"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-green" onclick="uploadProcess()">@PageText.GetHtml("District_form_btn_upload", clientLanguage)</button>
+                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("District_form_btn_cancel_inuploaddistrict", clientLanguage)</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+    <script src="~/js/core/district.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+    <script>
+    $(document).ready(function () {
+
+        $('#district-editor .save-button').click(saveDistrict);
+
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        let act = params.act;
+        if (act === 'new') newDistrict();
+        $.getJSON('/account/GetMenuConfig?menu=District', function (values) {
+            var mapping = mappingDynamicColumn(values)
+            $("#thead").append(`<th>@PageText.GetHtml("District_tbl_head_actions", clientLanguage)</th>`)
+            $("#tfoot").append(`<th>@PageText.GetHtml("District_tbl_head_foot", clientLanguage)</th>`)
+
+            $('#tbl').DataTable({
+                initComplete: onInitTableComplete,
+                dom: 'lrtp',
+                ordering: true,
+                processing: true,
+                serverSide: true,
+                filter: true,
+                ajax: {
+                    "url": "/District/GetListDistrict",
+                    "type": "POST",
+                    "datatype": "json"
+                },
+                "columns": [
+                    ...mapping,
+                    {"data": null, "name": "Action", "autoWidth": true, "orderable": false},
+                    {"data": "Id", "name": "Id", "visible": false},
+                ],
+                columnDefs: [
+                    {
+                        targets: -2,
+                        render: function (data, type, row, meta) {
+                            let str = '';
+                            if (data.IsCodeAvailable) {
+                                str += `<button class="btn-aw org" onclick="allocate(this, '${data.Uid}')" ><img src="/img/icon/create-contract.png" /> <span class="tooltipText">@PageText.GetHtml("District_tooltip_txt_allocate_codes", clientLanguage)</span></button>`;
+                            }
+                            str += `
+                                <button class="btn-aw edit" onclick="editDistrict('${data.Uid}')" ><img src="/img/icon/edit.png" /> <span class="tooltipText">@PageText.GetHtml("District_tooltip_txt_edit", clientLanguage)</span></button>
+                                <button class="btn-aw delete" onclick="deleteDistrict('${data.Uid}')" ><img src="/img/icon/delete.png" /> <span class="tooltipText">@PageText.GetHtml("District_tooltip_txt_delete", clientLanguage)</span></button>`;
+                            return str;
+                        }
+                    },
+                    {
+                        targets: 0,
+                        render: function (data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        }
+                    }
+                ],
+                "aaSorting": []
+            });
+        })
+    });
+    
+    function mappingDynamicColumn(values) {
+      return values.map(val => {
+                      $("#thead").append(`<th class="${val.Class}">${val.Name}</th>`)
+                      $("#tfoot").append(`<th class="${val.Class}">${val.Name}</th>`);
+                      switch (val.Key) {
+                          case "Id":
+                              return {
+                                  "data": val.Key, "name": val.Name, "autoWidth": true, "visible": false
+                              };
+                          case "No":
+                              return {
+                                  "data": null, "name": "No", "autoWidth": true, "orderable": false,
+                                  render: function (data, type, row, meta) {
+                                      return meta.row + meta.settings._iDisplayStart + 1;
+                                  }
+                              };
+                          default:
+                              return {
+                                  "data": val.Key, "name": val.Name, "autoWidth": true
+                              }
+                      }
+                  })
+    }
+    
+    function onInitTableComplete() {
+                        let remarksIndex = -1;
+                        $('#tbl tfoot th').each(function (i) {
+                            var title = $(this).text();
+                            if (title == "Remarks") remarksIndex = i;
+                            $(this).html('<input type="text" class="Search' + title + '" placeholder="@PageText.GetHtml("District_tbl_txt_search", clientLanguage)" />');
+                            if (title == "Actions" || title == "No") {
+                                $(this).html("");
+                            }
+                        });
+                        $('#tbl tbody tr').each(function () {
+                                            $('td',this).each(function(i) {
+                                                var value = $(this).text();
+                                                if (!isNaN(+value) && i > 0 && i != remarksIndex){
+                                                    $(this).addClass('text-right')
+                                                }
+                                            })
+                                        });
+    
+                        this.api().columns().every(function () {
+                            var that = this;
+                            if (this.footer() != null) {
+                                $('input', this.footer()).on('keyup change clear', delay(function () {
+                                                                                                                             if (that.search() !== this.value) {
+                                                                                                                                 that.search(this.value).draw();
+                                                                                                                             }
+                                                                                                                         }));
+                            }
+                        });
+    
+                        var r = $('#tbl tfoot tr');
+                        r.find('th').each(function () {
+                            $(this).css('padding', 8);
+                        });
+                        $('#tbl thead').append(r);
+                        $('#search_0').css('text-align', 'center');
+                    }
+    </script>
+}

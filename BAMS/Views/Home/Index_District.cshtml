@@ -1,0 +1,72 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var district = (District)ViewData["district"];
+    var logo = district?.Logo ?? "default.png";
+    var schoolQty = ViewData["schoolQty"];
+    var teacherQty = ViewData["teacherQty"];
+    var userAccQty = ViewData["userAccQty"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+@*<div class="title-page flex">
+    <h2>Home</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>*@
+
+
+<div class="panel-greeting flex">
+    <div class="col-3">
+        @*<img src="~/img/logo/@logo" />*@
+        <img src="/img/content/Seal_of_South_Jakarta.png" class="logo-admin">
+    </div>
+    <div class="col-9">
+        <div class="welcoming-text">
+            @PageText.GetHtml("Home_district_txt_welcome_message", clientLanguage) 
+            <h2>@district?.Name</h2>
+        </div>
+        <div class="count-wrap flex">
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@schoolQty</h3>
+                    @PageText.GetHtml("Home_district_txt_registered_school", clientLanguage)
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/school?act=new'"><img src="~/img/icon/create-school-acc.png" /> @PageText.GetHtml("Home_district_btn_new_school", clientLanguage) </button>
+            </div>
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@teacherQty</h3>
+                    @PageText.GetHtml("Home_district_txt_registered_teacher", clientLanguage)
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/teacher?act=new'"><img src="~/img/icon/create-teacher-acc.png" /> @PageText.GetHtml("Home_district_btn_new_teacher", clientLanguage)</button>
+            </div>
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@userAccQty</h3>
+                    @PageText.GetHtml("Home_district_txt_registered_student", clientLanguage)
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/school?act=allocate'"><img src="~/img/icon/distribute-activation-code.png" /> @PageText.GetHtml("Home_district_btn_activation_code", clientLanguage) </button>
+            </div>
+        </div>
+        
+        <div class="count-wrap flex">
+            <div class="col-12">
+                <div class="student-count wider flex">
+                    <div class="col-9">
+                        <span>@userAccQty </span> @PageText.GetHtml("Home_district_txt_students_learning_english", "en")
+                    </div>
+                    <div class="col-3">
+                        <button onclick="location.href='/report'" class="btn-orange btn-icon"><img src="/img/icon/report.png"> @PageText.GetHtml("Home_district_btn_student_progress_report",clientLanguage)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="img-bottom flex">
+    <img src="~/img/content/BIBALALA-District-image.jpg" />
+</div>

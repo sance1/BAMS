@@ -1,0 +1,225 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+
+@inject ITextService PageText;
+@inject IConfiguration _config
+
+@{
+    int projectId = (int) ViewData["projectId"];
+
+    var contract = (Contract) ViewData["Contract"];
+    long projectUid = (long) ViewData["ProjectUid"];
+    var projectList = ViewData["ProjectList"] as List<Project>;
+    long contractUid = contract?.Uid ?? 0;
+    int contractId = contract?.Id ?? 0;
+
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+
+    var title = PageText.GetHtml("Contract2_form_title_txt_update", clientLanguage);
+    if (contract == null)
+    {
+        title = PageText.GetHtml("Contract2_form_title_txt_create", clientLanguage);
+    }
+
+    var projectData = (Project) ViewData["project"];
+    var acReqData = (ActivationCodeRequest) ViewData["acReq"];
+    var page = (string) ViewData["page"];
+
+    if (page == "activatiocoderequest" && acReqData != null)
+    {
+        title = PageText.GetHtml("Contract2_form_title_txt_update", clientLanguage);
+    }
+    else if (page == "activatiocoderequest" && acReqData == null)
+    {
+        title = PageText.GetHtml("Contract2_form_title_txt_create", clientLanguage);
+    }
+}
+
+<input type="hidden" id="project-id" value="@projectId">
+<input type="hidden" id="project-uid" value="@projectUid">
+
+<div class="title-page flex" style="font-weight: 700;">
+    Project &nbsp; &nbsp; &nbsp;
+    @*<h2>@PageText.GetHtml("List Of Contract", clientLanguage)</h2>*@
+    <select id="project-sel">
+        @foreach (var project in projectList)
+        {
+            if (projectId == project.Id)
+            {
+                <option value="@project.Id" selected> @project.Name</option>
+            }
+            else
+            {
+                <option value="@project.Id"> @project.Name</option>
+            }
+        }
+    </select>
+    <img src="~/img/content/logo8e.png" class="logo8el"/>
+</div>
+
+<div class="flex btn-top_wrap">
+    <button class="btn-orange btn-icon" onclick="newContract(@projectUid)">
+        <img src="~/img/icon/create-project.png"/> @PageText.GetHtml("Contract2_btn_new_contract", clientLanguage)
+    </button>
+    <div class="btn-top_right">
+        <button class="btn-cyan btn-icon" onclick="to_project(@projectId)"><i class="fa fa-backward" aria-hidden="true"></i> &nbsp; &nbsp; &nbsp; @PageText.GetHtml("Contract2_btn_back", clientLanguage)</button>
+    </div>
+</div>
+<div class="tbl-general tbl-spc">
+    <table id="contract-list" class="display tbl-padding tbl-contract" style="width:100%">
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_contract_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_start_date", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_end_date", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_code_request_date", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_code_update_date", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_total_activation_codes", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_uploaded_activation_codes", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_status", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_notes", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_id", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_project_name", clientLanguage)</th>
+            <th align="center">@PageText.GetHtml("Contract2_tbl_txt_actions", clientLanguage)</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>No</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_contract_name", clientLanguage)</th>
+            <th class="th-small">@PageText.GetHtml("Contract2_tbl_txt_start_date", clientLanguage)</th>
+            <th class="th-small">@PageText.GetHtml("Contract2_tbl_txt_end_date", clientLanguage)</th>
+            <th class="th-large">@PageText.GetHtml("Contract2_tbl_txt_code_request_date", clientLanguage)</th>
+            <th class="th-large">@PageText.GetHtml("Contract2_tbl_txt_code_update_date", clientLanguage)</th>
+            <th class="th-semi-large">@PageText.GetHtml("Contract2_tbl_txt_total_activation_codes", clientLanguage)</th>
+            <th class="th-semi-large">@PageText.GetHtml("Contract2_tbl_txt_uploaded_activation_codes", clientLanguage)</th>
+            <th class="th-small">@PageText.GetHtml("Contract2_tbl_txt_status", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_notes", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_id", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_project_name", clientLanguage)</th>
+            <th>@PageText.GetHtml("Contract2_tbl_txt_actions", clientLanguage)</th>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="contract-editor">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@title @PageText.GetHtml("Contract2_form_title_txt_contract",clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <input type="hidden" id="uid"/>
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract2_form_txt_project", clientLanguage)</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="projectUid" onchange="getAutoContractName()">
+                                    @foreach (var project in projectList)
+                                    {
+                                        <option value="@project.Uid">@project.Name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract2_form_txt_contract_name", clientLanguage) </label>
+                            <div class="col-sm-4">
+                                <div id="dataAuto"></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <input autocomplete="off" class="form-control" type="text" id="name" placeholder="@PageText.GetHtml("Contract2_form_txt_contract_name_placeholder", clientLanguage)" value="@contract?.Name"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract2_form_txt_start_date", clientLanguage) </label>
+                            <div class="col-sm-8">
+                                <input autocomplete="off" onchange="getAutoContractName()" class="form-control date-format-form" data-date-format="DD/MM/YYYY" type="date" id="startDate" value="@((contract?.StartDate ?? DateTime.Today).ToString("yyyy-MM-dd"))"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract2_form_txt_end_date", clientLanguage) </label>
+                            <div class="col-sm-8">
+                                <input autocomplete="off" class="form-control date-format-form" data-date-format="DD/MM/YYYY" type="date" id="endDate" value="@((contract?.EndDate ?? DateTime.Today).ToString("yyyy-MM-dd"))"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract2_form_txt_code_quantity", clientLanguage) </label>
+                            <div class="col-sm-8">
+                                <input autocomplete="off" class="form-control" type="number" id="activationCodes" placeholder="@PageText.GetHtml("Contract2_form_txt_code_quantity_placeholder", clientLanguage)" value="@contract?.ActivationCodes"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">@PageText.GetHtml("Contract2_form_txt_remark", clientLanguage) </label>
+                            <div class="col-sm-8">
+                                <input autocomplete="off" class="form-control" type="text" id="remarks" placeholder="@PageText.GetHtml("Contract2_form_txt_remark_placeholder", clientLanguage)" value="@contract?.Remarks"/>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn-green save-button" type="button">@PageText.GetHtml("Contract2_form_btn_save", clientLanguage)</button>
+                            <button class="btn-grey" onclick="hideEditor()" type="button">@PageText.GetHtml("Contract2_form_btn_cancel", clientLanguage)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-contract-ac">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@title @PageText.GetHtml("Contract2_form_title_activation_code_request", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <input type="hidden" id="acReqId" value="@acReqData?.Id"/>
+                            <input type="hidden" id="projectId" value="@projectId"/>
+                            <input type="hidden" id="contractId" value="@contractId"/>
+                            <input type="hidden" id="contractUid" value="@contractUid"/>
+                            <label class="col-sm-3 col-form-label">Project </label>
+                            <div class="col-sm-9">
+                                <input autocomplete="off" class="form-control" type="text" readonly value="@projectData?.Name"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">@PageText.GetHtml("Contract2_form_txt_contract",clientLanguage)</label>
+                            <div class="col-sm-9">
+                                <input autocomplete="off" class="form-control" type="text" readonly id="contract-name" value="@contract?.Name"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">@PageText.GetHtml("Contract2_form_txt_remark_when_activation_code", clientLanguage) </label>
+                            <div class="col-sm-9">
+                                <input autocomplete="off" class="form-control" type="text" id="remarksAc" placeholder="Remark" value="@acReqData?.Remarks"/>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn-orange" onclick="saveAc()">@PageText.GetHtml("Contract2_form_btn_save_when_activation_code", clientLanguage)</button>
+                            <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("Contract2_form_btn_cancel_when_activation_code", clientLanguage)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/core/contract.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+}

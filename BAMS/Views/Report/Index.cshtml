@@ -1,0 +1,188 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+
+@inject ITextService PageText
+
+@{
+    var contractData = (Contract)ViewData["contract"];
+    var acReqData = (ActivationCodeRequest)ViewData["acReq"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+
+}
+@*<link href="~/css/daterangepicker.css" rel="stylesheet" />*@
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Report_txt_genaral_report",clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>
+
+<div class="panel-contact">
+    <div class="flex">
+        <div class="col-lg-4 col-sm-12">
+            <div class="repot-col inside">
+                <div class="col-student">
+                    <h4>@PageText.GetHtml("Report_txt_student_login",clientLanguage) </h4>
+                    <a href=""><img src="~/img/assets/icon-dw.jpg" /></a>
+                </div>
+
+                <div class="counting ">
+                    <div class="date">
+                        <input type="date" class="date-format" value="2022-09-12" data-date-format="DD/MM/YYYY">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                    <div class="number">1200</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="repot-col inside">
+                <div class="col-student">
+                    <h4>@PageText.GetHtml("Report_txt_average_time_spent",clientLanguage)</h4>
+                    <a href=""><img src="~/img/assets/icon-time.jpg" /></a>
+                </div>
+
+                <div class="counting ">
+                    <div class="date">
+                        <input type="date" class="date-format" value="2022-09-12" data-date-format="DD/MM/YYYY">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                    <div class="number">12</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="repot-col inside">
+                <div class="col-student">
+                    <h4>@PageText.GetHtml("Report_txt_real_time_login",clientLanguage)</h4>
+                    <a href=""><img src="~/img/assets/icon-user.jpg" /></a>
+                </div>
+
+                <div class="counting ">
+                    <div class="number">9,860</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="big-col row">
+        <div class="col-lg-6 col-sm-12">
+            <div class="repot-col inside">
+                <canvas id="chartLevel" class="donutChart-report"></canvas>
+                <div class="title-chart">
+                    <h3>@PageText.GetHtml("Home_admin_txt_account_activation", clientLanguage)</h3>
+                    <p class="clr-blue"><span>@PageText.GetHtml("Report_txt_activated_accounts",clientLanguage)</span> : <strong>15.000</strong></p>
+                    <p class="clr-orange"><span>@PageText.GetHtml("Report_txt_unactivated_accounts",clientLanguage)</span> : <strong>5.000</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <div class="repot-col inside">
+                <canvas id="chartAccount" class="donutChart-report"></canvas>
+                <div class="title-chart">
+                    <h3>@PageText.GetHtml("Home_admin_txt_student_learning_level", clientLanguage)</h3>
+                    <p class="clr-blue"><span>@PageText.GetHtml("Report_txt_level1",clientLanguage)</span> : <strong>7.500</strong></p>
+                    <p class="clr-orange"><span>@PageText.GetHtml("Report_txt_level2",clientLanguage)</span> : <strong>4.700</strong></p>
+                    <p class="clr-red"><span>@PageText.GetHtml("Report_txt_level3",clientLanguage)</span> : <strong>2.700</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/Chart.min.js"></script>
+    <script src="~/js/chartjs-doughnut.js"></script>
+    <script>
+
+        chartLevel = document.getElementById('chartLevel').getContext('2d');
+        var myChart = new Chart(chartLevel, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [15000, 5000],
+                    backgroundColor: ['#4dbefe', '#ee651f'],
+                    label: 'Dataset 1'
+                }],
+                labels: ['Activated', 'Unactived']
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
+                    position: 'right',
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                },
+                plugins: {
+                    doughnutlabel: {
+                        labels: [
+                            {
+                                text: '20000',
+                                font: {
+                                    size: '20',
+                                    family: 'Source Sans Pro, Helvetica, sans-serif',
+                                    weight: 'bold'
+                                }
+                            }, {
+                                text: '@PageText.GetHtml("Report_txt_total_in_chart_activation", clientLanguage)',
+                                font: {
+                                    size: '16',
+                                    family: 'Source Sans Pro, Helvetica, sans-serif',
+                                    weight: 'normal'
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+
+        chartAccount = document.getElementById('chartAccount').getContext('2d');
+        var myChart = new Chart(chartAccount, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [7500, 4700, 2700],
+                    backgroundColor: ['#4dbefe', '#ee651f', '#c51e2f'],
+                    label: 'Dataset 1'
+                }],
+                labels: ['Level 1', 'Level 2', 'Level 3']
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
+                    position: 'top',
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                },
+                plugins: {
+                    doughnutlabel: {
+                        labels: [
+                            {
+                                text: '15000',
+                                font: {
+                                    size: '20',
+                                    family: 'Source Sans Pro, Helvetica, sans-serif',
+                                    weight: 'bold'
+                                }
+                            }, {
+                                text: '@PageText.GetHtml("Report_txt_total_in_student_learning",clientLanguage)',
+                                font: {
+                                    size: '16',
+                                    family: 'Source Sans Pro, Helvetica, sans-serif',
+                                    weight: 'normal'
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    </script>
+}

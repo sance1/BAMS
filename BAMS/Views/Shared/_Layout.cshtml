@@ -1,0 +1,351 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Http
+@using BAMS.Helpers;
+@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+
+@inject ITextService PageText
+@inject IConfiguration _config
+
+@{
+    var username = Context.User.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value;
+    var clientLanguage = (string)ViewBag.ClientLanguage;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/assets/favicon.ico" type="image/x-icon">
+    <title>@ViewData["Title"] - BAMS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.12.1/fc-4.1.0/datatables.min.css" />
+    <link rel="stylesheet" href="~/css/site.css?version=@_config["Resources:Version"]" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="~/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="~/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css">
+    <link rel="stylesheet" href="~/css/style.css?version=@_config["Resources:Version"]">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-collapse">
+    <div class="wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img src="~/img/assets/icon.png" />
+            @*<img class="animation__wobble" src="~/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">*@
+        </div>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="~/#" role="button">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <a href="/home">
+                        <img src="~/img/assets/logo-bibalala.png" />
+                    </a>
+                </li>
+            </ul>
+            @*<button type="button" onclick="changeLanguage('en')">English</button>
+                <button type="button" onclick="changeLanguage('id')">Indonesia</button>*@
+            <div class="nav-right">
+                <div class="user-panel">
+                    <div class="image">
+                        <img src="~/img/content/user-default.png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="info">
+                        @PageText.GetHtml("Layout_header_welcome", clientLanguage)
+                        <a href="~/#" class="d-block">@username</a>
+                    </div>
+                </div>
+                <a href="/Account/Signout" class="icon-signout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+        </nav>
+        <aside class="main-sidebar sidebar-dark-primary">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+
+                <nav class="mt-2">
+                    <ul id="list-menu" class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div class="wrap">
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- /.content-wrapper -->
+
+    </div>
+    <!-- ./wrapper -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.12.1/fc-4.1.0/datatables.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/adminlte.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <script src="~/js/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="~/js/date-format.js"></script>
+
+    @*custome date*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+    @*End custome date*@
+
+
+    @RenderSection("Scripts", required: false)
+
+
+<script>
+        $(document).ready(function () {
+            GetSidebarMenu();
+
+        });
+        function delay(fun) {
+            let timer = 0
+            return function(...args) {
+                clearTimeout(timer)
+                timer = setTimeout(fun.bind(this, ...args), 500) //delay 500ms
+                }
+        }
+        function GetSidebarMenu() {
+            var url = "/Menu/GetMenuAccessPermission";
+            $.ajax({
+                url: url,
+                dataType: "json",
+                success: function (response) {
+                    MenuElement(response.getAccessPermission);
+                },
+                error: function () {
+                    alert("Err GetMenu");
+                }
+            });
+        }
+        function MenuElement(data) {
+            var html = "";
+            var iconMenu = [
+                `nav-icon fa fa-sitemap`,// Menu Order 1
+                `nav-icon fa fa-file`,
+                `nav-icon fa fa-check-square`,
+                `nav-icon fa fa-university`,
+                `nav-icon fa fa-graduation-cap`,
+                `nav-icon fa fa-user-plus`,
+                `nav-icon fa fa fa-users`,
+                `nav-icon fa fa-medkit`,
+                `nav-icon fa fa-unlock-alt`,
+                `nav-icon fa fa-book`,
+                `nav-icon fa fa-envelope`,
+                `nav-icon fa fa-phone-square`
+            ];
+            html += `<li class="nav-item" >
+                        <a href="/Home" id="home" @*nav-icon fa fa-book*@ class="nav-link">
+                            <p>
+                                @PageText.GetHtml("Home", clientLanguage)
+                            </p>
+                        </a>
+                    </li>`;
+
+            for (var i = 0; i < data.length; i++) {
+                var getData = data[i];
+                html += `
+                        <li class="nav-item" >
+                        <a href="/${getData.Url}" id="${getData.Id}" class="nav-link">
+                            <p>
+                                ${getData.Name}
+                            </p>
+                        </a>
+                        </li>
+                    `;
+
+
+            }
+            $("#list-menu").prepend(html);
+            MenuActived();
+
+        }
+
+    function MenuActived() {
+        var urlCurrently = '@Context.Request.Path'.replaceAll('/', '');
+        urlCurrently = urlCurrently.toLowerCase();
+        if (urlCurrently != '') {
+            $(`#${urlCurrently}`).addClass("nav-link actived");
+        }
+        else if (urlCurrently == 'home') {
+            $("#home").addClass("nav-link actived");
+        }
+        else if (urlCurrently == 'report') {
+            $("#report").addClass("nav-link actived");
+        }
+    }
+
+    function changeLanguage(lang) {
+       window.location.href = '/PageText/SetLanguage?culture=' + lang + '&returnUrl=' + window.location.pathname.toLowerCase();
+    }
+
+    if (document.querySelector(".number") != null) {
+        document.querySelector(".number").addEventListener("keypress", function (evt) {
+            if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57) {
+                evt.preventDefault();
+            }
+        });
+    }
+
+    if ($(".date-format").length > 0) {
+        $(".date-format").on("change", function () {
+            this.setAttribute(
+                "data-date",
+                moment(this.value, "")
+                    .format(this.getAttribute("data-date-format"))
+            )
+        }).trigger("change");
+    }
+
+    if ($(".date-format-form").length > 0) {
+        $(".date-format-form").on("change", function () {
+            this.setAttribute(
+                "data-date",
+                moment(this.value, "")
+                    .format(this.getAttribute("data-date-format"))
+            )
+        }).trigger("change");
+    }
+
+    var layoutText = {
+        Student_form_title_txt_new_student: "@PageText.GetHtml("Student_form_title_txt_new_student", clientLanguage)",
+        Student_popup_txt_want_to_delete_the_student: "@PageText.GetHtml("Student_popup_txt_want_to_delete_the_student", clientLanguage)",
+        Student_toast_txt_deleted_successfully: "@PageText.GetHtml("Student_toast_txt_deleted_successfully", clientLanguage)",
+        Student_popup_txt_failed: "@PageText.GetHtml("Student_popup_txt_failed",clientLanguage)",
+        Student_tbl_txt_search: "@PageText.GetHtml("Student_tbl_txt_search",clientLanguage)",
+        Student_btn_tooltip_activated_student: "@PageText.GetHtml("Student_btn_tooltip_activated_student",clientLanguage)",
+        Student_btn_tooltip_edit: "@PageText.GetHtml("Student_btn_tooltip_edit",clientLanguage)",
+        Student_btn_tooltip_delete: "@PageText.GetHtml("Student_btn_tooltip_delete",clientLanguage)",
+        Student_toast_txt_successfully_submitted: "@PageText.GetHtml("Student_toast_txt_successfully_submitted",clientLanguage)",
+        Student_popup_txt_upload_failed: "@PageText.GetHtml("Student_popup_txt_upload_failed",clientLanguage)",
+        Student_popup_txt_student_name_cannot_be_empty: "@PageText.GetHtml("Student_popup_txt_student_name_cannot_be_empty",clientLanguage)",
+        Student_popup_txt_username_cannot_be_empty: "@PageText.GetHtml("Student_popup_txt_username_cannot_be_empty",clientLanguage)",
+        Student_toast_txt_saved_successfully: "@PageText.GetHtml("Student_toast_txt_saved_successfully",clientLanguage)",
+        Student_popup_txt_invalid_format: "@PageText.GetHtml("Student_popup_txt_invalid_format",clientLanguage)",
+        Account_popup_txt_username_validation_error1: "@PageText.GetHtml("Account_popup_txt_username_validation_error1",clientLanguage)",
+        Account_popup_txt_username_validation_error2: "@PageText.GetHtml("Account_popup_txt_username_validation_error2",clientLanguage)",
+        Account_form_title_txt_new_account: "@PageText.GetHtml("Account_form_title_txt_new_account",clientLanguage)",
+        Account_form_title_txt_new_teacher_account: "@PageText.GetHtml("Account_form_title_txt_new_teacher_account",clientLanguage)",
+        Account_form_title_txt_edit_account: "@PageText.GetHtml("Account_form_title_txt_edit_account",clientLanguage)",
+        Account_form_title_txt_edit_teacher_account: "@PageText.GetHtml("Account_form_title_txt_edit_teacher_account",clientLanguage)",
+        Account_popup_txt_want_to_delete: "@PageText.GetHtml("Account_popup_txt_want_to_delete",clientLanguage)",
+        Account_tbl_txt_search: "@PageText.GetHtml("Account_tbl_txt_search",clientLanguage)",
+        Account_popup_txt_organization_cannot_be_empty: "@PageText.GetHtml("Account_popup_txt_organization_cannot_be_empty",clientLanguage)",
+        Account_popup_txt_email_cannot_be_empty: "@PageText.GetHtml("Account_popup_txt_email_cannot_be_empty",clientLanguage)",
+        Account_popup_txt_username_cannot_be_empty: "@PageText.GetHtml("Account_popup_txt_username_cannot_be_empty",clientLanguage)",
+        accountTblTxtActions: "@PageText.GetHtml("Account-tbl-txt-actions",clientLanguage)",
+        Account_btn_tooltip_delete: "@PageText.GetHtml("Account_btn_tooltip_delete",clientLanguage)",
+        Account_popup_txt_successfully_created: "@PageText.GetHtml("Account_popup_txt_successfully_created",clientLanguage)",
+        Account_popup_txt_account_has_been_deleted: "@PageText.GetHtml("Account_popup_txt_account_has_been_deleted",clientLanguage)",
+        Account_form_btn_update: "@PageText.GetHtml("Account_form_btn_update",clientLanguage)",
+        Account_form_btn_create: "@PageText.GetHtml("Account_form_btn_create", clientLanguage)",
+        Account_btn_tooltip_edit: "@PageText.GetHtml("Account_btn_tooltip_edit",clientLanguage)",
+        Account_popup_txt_edit_successful: "@PageText.GetHtml("Account_popup_txt_edit_successful",clientLanguage)",
+        Account_form_btn_save: "@PageText.GetHtml("Account_form_btn_save",clientLanguage)",
+        Role_popup_txt_name_cannot_be_empty: "@PageText.GetHtml("Role_popup_txt_name_cannot_be_empty","en")",
+        Role_popup_txt_access_level_cannot_be_empty: "@PageText.GetHtml("Role_popup_txt_access_level_cannot_be_empty","en")",
+        Role_btn_tooltip_edit: "@PageText.GetHtml("Role_btn_tooltip_edit", clientLanguage)",
+        Role_btn_tooltip_delete: "@PageText.GetHtml("Role_btn_tooltip_delete","en")",
+        Role_tbl_txt_search: "@PageText.GetHtml("Role_tbl_txt_search","en")",
+        Role_popup_txt_want_to_delete: "@PageText.GetHtml("Role_popup_txt_want_to_delete?","en")",
+        Role_popup_txt_confirmation: "@PageText.GetHtml("Role_popup_txt_confirmation","en")",
+        Role_popup_txt_success: "@PageText.GetHtml("Role_popup_txt_success","en")",
+        Pagetexts_btn_tooltip_edit: "@PageText.GetHtml("Pagetexts_btn_tooltip_edit", "en")",
+        Pagetexts_btn_tooltip_delete: "@PageText.GetHtml("Pagetexts_btn_tooltip_delete","en")",
+        Pagetexts_tbl_txt_search: "@PageText.GetHtml("Pagetexts_tbl_txt_search","en")",
+        Pagetexts_popup_txt_confirmation: "@PageText.GetHtml("Pagetexts_popup_txt_confirmation","en")",
+        Pagetexts_popup_want_to_delete: "@PageText.GetHtml("Pagetexts_popup_want_to_delete","en")",
+        Message_btn_prev: "@PageText.GetHtml("Message_btn_prev","en")",
+        Message_btn_next: "@PageText.GetHtml("Message_btn_next","en")",
+        Message_txt_from_whenclicked: "@PageText.GetHtml("Message_txt_from_whenclicked","en")",
+        Message_txt_title_whenclicked: "@PageText.GetHtml("Message_txt_title_whenclicked","en")",
+        Message_txt_date_whenclicked: "@PageText.GetHtml("Message_txt_date_whenclicked","en")",
+        Message_txt_forward_whenclicked: "@PageText.GetHtml("Message_txt_forward_whenclicked","en")",
+        Message_txt_replay_whenclicked: "@PageText.GetHtml("Message_txt_replay_whenclicked","en")",
+        Contract2_btn_tooltip_request_activation_code: "@PageText.GetHtml("Contract2_btn_tooltip_request_activation_code",clientLanguage)",
+        Contract2_btn_tooltip_edit: "@PageText.GetHtml("Contract2_btn_tooltip_edit",clientLanguage)",
+        Contract2_btn_tooltip_delete: "@PageText.GetHtml("Contract2_btn_tooltip_delete",clientLanguage)",
+        Contract2_tbl_txt_search: "@PageText.GetHtml("Contract2_tbl_txt_search",clientLanguage)",
+        Contract2_form_title_new_contract: "@PageText.GetHtml("Contract2_form_title_new_contract",clientLanguage)",
+        Contract2_form_title_edit_contract: "@PageText.GetHtml("Contract2_form_title_edit_contract",clientLanguage)",
+        Contract2_popup_txt_delete_confirmation: "@PageText.GetHtml("Contract2_popup_txt_delete_confirmation",clientLanguage)",
+        Contract2_popup_txt_want_to_delete: "@PageText.GetHtml("Contract2_popup_txt_want_to_delete",clientLanguage)",
+        Contract2_popup_deleted_successfully: "@PageText.GetHtml("Contract2_popup_deleted_successfully",clientLanguage)",
+        Contract2_popup_data_validation: "@PageText.GetHtml("Contract2_popup_data_validation",clientLanguage)",
+        Contract2_popup_txt_project_cannot_empty: "@PageText.GetHtml("Contract2_popup_txt_project_cannot_empty",clientLanguage)",
+        Contract2_popup_txt_contract_name_cannot_empty: "@PageText.GetHtml("Contract2_popup_txt_contract_name_cannot_empty",clientLanguage)",
+        Contract2_popup_txt_start_date_invalid: "@PageText.GetHtml("Contract2_popup_txt_start_date_invalid",clientLanguage)",
+        Contract2_popup_txt_end_date_invalid: "@PageText.GetHtml("Contract2_popup_txt_end_date_invalid",clientLanguage)",
+        Contract2_popup_txt_must_be_less_than_end_date: "@PageText.GetHtml("Contract2_popup_txt_must_be_less_than_end_date",clientLanguage)",
+        Contract2_popup_txt_quantity_cannot_empty: "@PageText.GetHtml("Contract2_popup_txt_quantity_cannot_empty",clientLanguage)",
+        Contract2_popup_txt_saved_successfully: "@PageText.GetHtml("Contract2_popup_txt_saved_successfully",clientLanguage)",
+        Contract2_popup_txt_project_cannot_empty_when_save: "@PageText.GetHtml("Contract2_popup_txt_project_cannot_empty_when_save",clientLanguage)",
+        Contract2_popup_contract_cannot_empty_when_save: "@PageText.GetHtml("Contract2_popup_contract_cannot_empty_when_save",clientLanguage)",
+        Project_popup_delete_that_data_first: "@PageText.GetHtml("Project_popup_delete_that_data_first", clientLanguage)",
+        Project_form_new_project: "@PageText.GetHtml("Project_form_new_project", clientLanguage)",
+        Project_form_edit_project: "@PageText.GetHtml("Project_form_edit_project", clientLanguage)",
+        Project_popup_delete_confirmation: "@PageText.GetHtml("Project_popup_delete_confirmation", clientLanguage)",
+        Project_popup_are_you_sure: "@PageText.GetHtml("Project_popup_are_you_sure",clientLanguage)",
+        Project_toast_success_deleted: "@PageText.GetHtml("Project_toast_success_deleted",clientLanguage)",
+        Project_popup_name_cannot_empty: "@PageText.GetHtml("Project_popup_name_cannot_empty", clientLanguage)",
+        Project_popup_partner_name_cannot_empty: "@PageText.GetHtml("Project_popup_partner_name_cannot_empty",clientLanguage)",
+        Project_popup_contact_person_cannot_empty: "@PageText.GetHtml("Project_popup_contact_person_cannot_empty", clientLanguage)",
+        Project_toast_has_been_saved_successfully: "@PageText.GetHtml("Project_toast_has_been_saved_successfully", clientLanguage)",
+        Project_tbl_search: "@PageText.GetHtml("Project_tbl_search", clientLanguage)",
+        Project_btn_tooltip_delete: "@PageText.GetHtml("Project_btn_tooltip_delete", clientLanguage)",
+        Project_btn_tooltip_contract: "@PageText.GetHtml("Project_btn_tooltip_contract", clientLanguage)",
+        Project_popup_tbl_txt_search: "@PageText.GetHtml("Project_popup_tbl_txt_search",clientLanguage)",
+        Project_btn_tooltip_edit: "@PageText.GetHtml("Project_btn_tooltip_edit", "en")",
+        Contract_tbl_txt_search: "@PageText.GetHtml("Contract_tbl_txt_search",clientLanguage)",
+        Contract_form_txt_no_file_chosen: "@PageText.GetHtml("Contract_form_txt_no_file_chosen", clientLanguage)",
+        Contract_popup_txt_select_file: "@PageText.GetHtml("Contract_popup_txt_select_file",clientLanguage)",
+        Contract_btn_tooltip_upload_codes: "@PageText.GetHtml("Contract_btn_tooltip_upload_codes", clientLanguage)",
+        Access_permissions_popup_txt_enter_name: "@PageText.GetHtml("Access_permissions_popup_txt_enter_name",clientLanguage)",
+        Access_permissions_popup_txt_enter_group: "@PageText.GetHtml("Access_permissions_popup_txt_enter_group",clientLanguage)",
+        Access_permissions_btn_tooltip_edit: "@PageText.GetHtml("Access_permissions_btn_tooltip_edit",clientLanguage)",
+        Access_permissions_tbl_txt_search: "@PageText.GetHtml("Access_permissions_tbl_txt_search",clientLanguage)",
+        Access_permissions_btn_tooltip_delete: "@PageText.GetHtml("Access_permissions_btn_tooltip_delete",clientLanguage)",
+        Access_permissions_want_to_delete: "@PageText.GetHtml("Access_permissions_want_to_delete",clientLanguage)",
+        District_popup_txt_invalid_format_file: "@PageText.GetHtml("District_popup_txt_invalid_format_file",clientLanguage)",
+        District_popup_txt_district_uploaded_successfully: "@PageText.GetHtml("District_popup_txt_district_uploaded_successfully",clientLanguage)",
+        District_popup_txt_quantity_must_be_more_than: "@PageText.GetHtml("District_popup_txt_quantity_must_be_more_than",clientLanguage)",
+        District_popup_txt_you_sure_want_to_delete: "@PageText.GetHtml("District_popup_txt_you_sure_want_to_delete", clientLanguage)",
+        District_popup_txt_deleted_successfully: "@PageText.GetHtml("District_popup_txt_deleted_successfully",clientLanguage)",
+        District_popup_txt_district_name_cannot_empty: "@PageText.GetHtml("District_popup_txt_district_name_cannot_empty",clientLanguage)",
+        District_popup_txt_saved_successfully: "@PageText.GetHtml("District_popup_txt_saved_successfully",clientLanguage)",
+        DistrictTblHeadActions: "@PageText.GetHtml("District_tbl_head_actions", clientLanguage)",
+        DistrictTblHeadFoot: "@PageText.GetHtml("District_tbl_head_foot", clientLanguage)",
+        Administrative_btn_tooltip_allocate_codes: "@PageText.GetHtml("Administrative_btn_tooltip_allocate_codes",clientLanguage)",
+        Administrative_btn_tooltip_edit: "@PageText.GetHtml("Administrative_btn_tooltip_edit",clientLanguage)",
+        Administrative_btn_tooltip_delete: "@PageText.GetHtml("Administrative_btn_tooltip_delete",clientLanguage)"
+    }
+</script>
+
+</body>
+</html>

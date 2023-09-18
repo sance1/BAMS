@@ -1,0 +1,143 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var project = (Project)ViewData["Project"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+    var title = project == null ? PageText.GetHtml("Create", clientLanguage) : PageText.GetHtml("Update", clientLanguage);
+    long uid = project?.Uid ?? 0;
+}
+
+
+<div class="col-4">
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">@title @PageText.GetHtml("Project", clientLanguage)</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <input type="hidden" id="uid" value="@uid" />
+                <label>@PageText.GetHtml("Application Name", clientLanguage)</label>
+                <select id="appId" class="form-control">
+                    <option value="668275098182331">Bibalala</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>@PageText.GetHtml("Name", clientLanguage)</label>
+                <input autocomplete="off" class="form-control" type="text" id="name" value="@project?.Name" />
+            </div>
+            <div class="form-group">
+                <label>@PageText.GetHtml("Partner Name", clientLanguage)</label>
+                <input autocomplete="off" class="form-control" type="text" id="partnerName" value="@project?.PartnerName" />
+            </div>
+            <div class="form-group">
+                <label>@PageText.GetHtml("Contact Person", clientLanguage)</label>
+                <input autocomplete="off" class="form-control" type="text" id="contactPerson" value="@project?.ContactPerson" />
+            </div>
+            <div class="form-group">
+                <label>@PageText.GetHtml("Remarks", clientLanguage)</label>
+                <input autocomplete="off" class="form-control" type="text" id="remarks" value="@project?.Remarks" />
+            </div>
+
+            <div class="form-group mt-4">
+                <button id="save" type="button" class="btn btn-primary">@PageText.GetHtml("Save", clientLanguage)</button>
+                <button class="btn btn-danger">@PageText.GetHtml("Cancel", clientLanguage)</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#save").click(function() {
+
+                let uid = parseInt($("#uid").val());
+
+                let project = {
+                    uid: uid,
+                    appUid: parseInt($("#appId").val()),
+                    name: $("#name").val(),
+                    partnerName: $("#partnerName").val(),
+                    contactPerson: $("#contactPerson").val(),
+                    remarks: $("#remarks").val(),
+                };
+
+                let url = uid == 0
+                    ? '@Url.Action("Create", "Project")'
+                    : '@Url.Action("Update", "Project")';
+
+                let validationResult = validateInput(project);
+                if (validationResult.length > 0) {
+                    Swal.fire({
+                        title: 'Data Validation',
+                        html: validationResult.join('<br>'),
+                        icon: 'error'
+                    });
+                    return;
+                }
+
+                //let payload = JSON.stringify(project,
+                //    (key, value) => typeof value === 'bigint' ? value.toString() : value)
+                sendRequest(url, JSON.stringify(project))
+            });
+        });
+
+        function validateInput(input) {
+            let err = [];
+            if(input.name == ""){
+                err.push("Name cannot empty");
+            }
+            if(input.partnerName == ""){
+                err.push("Partner name cannot empty");
+            }
+            if(input.contactPerson == ""){
+                err.push("Contact person cannot empty");
+            }
+            return err;
+        }
+
+        function sendRequest(url, payload) {
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: payload,
+                success: function (response) {
+                    if (response.status == 0) {
+                        Swal.fire({
+                            title: 'Success',
+                            text: response.message,
+                            icon: 'success'
+                        }).then((result) => {
+                            location.href = "/project";
+                        });
+
+                        return;
+                    }
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.message,
+                        icon: 'error'
+                    });
+                },
+                error: function(response){
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.responseJSON.message,
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+
+    </script>
+}

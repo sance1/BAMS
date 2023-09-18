@@ -1,0 +1,167 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var pageText = (PageText)ViewData["PageText"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+    var title = pageText == null ? PageText.GetHtml("Pagetexts_title_txt_create", clientLanguage) : PageText.GetHtml("Pagetexts_title_txt_update", clientLanguage);
+    long uid = pageText?.Uid ?? 0;
+    var selectLanguage = "";
+    var valueSelect = "";
+    if (pageText?.LanguageCode == null)
+    {
+        selectLanguage = PageText.GetHtml("Pagetexts_dropdown_txt_choose_language",clientLanguage).ToString();
+        valueSelect = "";
+    }
+    else
+    {
+
+        if (pageText?.LanguageCode == "en")
+        {
+            selectLanguage = "English";
+        }
+        else
+        {
+            selectLanguage = "Indonesia";
+        }
+        valueSelect = pageText?.LanguageCode;
+    }
+}
+
+
+<div class="col-4">
+    <div class="modal-content" style="box-shadow:none; margin-bottom:20px;">
+        <div class="modal-header">
+            <h4 class="modal-title">@title @PageText.GetHtml("Pagetexts_title_txt_pagetexts", clientLanguage)</h4>
+        </div>
+
+        <div class="modal-body">
+            <div class="form-horizontal">
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="hidden" id="uid" value="@uid" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">@PageText.GetHtml("Pagetexts_txt_key", clientLanguage)</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" type="text" id="key" value="@pageText?.Key" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">@PageText.GetHtml("Pagetexts_txt_text", clientLanguage)</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" type="text" id="text" value="@pageText?.Text" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">@PageText.GetHtml("Pagetexts_txt_language_codes", clientLanguage)</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" type="text" id="languageCode">
+                                <option value="@valueSelect"> @selectLanguage </option>
+                                <option value="id"> @PageText.GetHtml("Pagetexts_dropdown_indonesia", clientLanguage) </option>
+                                <option value="en"> @PageText.GetHtml("Pagetexts_dropdown_english", clientLanguage) </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="save" type="button" class="btn-orange">@PageText.GetHtml("Pagetexts_btn_txt_save", clientLanguage)</button>
+                        <button class="btn-grey">@PageText.GetHtml("Pagetexts_btn_txt_cancel", clientLanguage)</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        @section Scripts{
+
+            <script>
+
+        $(document).ready(function () {
+
+            $("#save").click(function() {
+
+                let uid = parseInt($("#uid").val());
+
+                let pageText = {
+                    uid: uid,
+                    key: $("#key").val(),
+                    text: $("#text").val(),
+                    languageCode: $("#languageCode").val()
+                };
+
+                let url = uid == 0
+                    ? '@Url.Action("Create", "PageText")'
+                    : '@Url.Action("Update", "PageText")';
+
+                let validationResult = validateInput(pageText);
+                if (validationResult.length > 0) {
+                    Swal.fire({
+                        title:"@PageText.GetHtml("Pagetexts_popup_title_data_validation", "en")",
+                        html: validationResult.join('<br>'),
+                        icon: 'error'
+                    });
+                    return;
+                }
+
+                //let payload = JSON.stringify(project,
+                //    (key, value) => typeof value === 'bigint' ? value.toString() : value)
+                sendRequest(url, JSON.stringify(pageText))
+            });
+        });
+
+        function validateInput(input) {
+            let err = [];
+            if(input.key == ""){
+                err.push("@PageText.GetHtml("Pagetexts_popup_key_cannot_empty","en")");
+            }
+            if(input.text == ""){
+                err.push("@PageText.GetHtml("Pagetexts_popup_text_name_cannot_empty","en")");
+            }
+            if(input.languageCode == ""){
+                err.push("@PageText.GetHtml("Pagetexts_popup_text_language_code_cannot_empty","en")");
+            }
+            return err;
+        }
+
+        function sendRequest(url, payload) {
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: "application/json; charset=utf-8",
+                data: payload,
+                success: function (response) {
+                    if (response.status == 0) {
+                        Swal.fire({
+                            title: "@PageText.GetHtml("Pagetexts_popup_title_txt_success","en")",
+                            text: response.message,
+                            icon: 'success'
+                        }).then((result) => {
+                            window.location.href = "/PageText";
+                        });
+
+                        return;
+                    }
+                    @*Swal.fire({
+                        title: 'Error',
+                        text: response.message,
+                        icon: 'error'
+                    });*@
+                },
+                error: function(response){
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.responseJSON.message,
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+
+            </script>
+        }

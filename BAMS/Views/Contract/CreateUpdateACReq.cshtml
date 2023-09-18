@@ -1,0 +1,100 @@
+﻿@using BAMS.Data.Models;
+
+@{
+    var projectData = (Project)ViewData["project"];
+    var contractData = (Contract)ViewData["contract"];
+    var acReqData = (ActivationCodeRequest)ViewData["acReq"];
+    var projectId = (int)ViewData["projectId"];
+    var contractId = (int)ViewData["contractId"];
+    var title = "Update";
+    if(acReqData == null)
+    {
+        title = "Create";
+    }
+}
+
+
+<div>
+    <h2>@title Activation Code Request</h2>
+    <input type="hidden" id="acReqId" value="@acReqData?.Id"/>
+    <input type="hidden" id="projectId" value="@projectId"/>
+    <input type="hidden" id="contractId" value="@contractId"/>
+    <input type="text" id="projectName" readonly placeholder="Project" value="@projectData?.Name"/>
+    <input type="text" id="contractName" readonly placeholder="Contract" value="@contractData?.Name"/>
+    <input type="text" id="remarks" placeholder="Remarks" value="@acReqData?.Remarks"/>
+    <button type="submit" onclick="save()">Save</button>
+</div>
+
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            
+            
+        });
+
+        function save(){
+            let data ={
+                ProjectId: parseInt($("#projectId").val()) || 0,
+                ContractId: parseInt($("#contractId").val()) || 0,
+                Remarks: $("#remarks").val(),
+            };
+
+            let err = [];
+            if(data.ProjectId == "" || data.ProjectId <= 0){
+                err.push("Project cannot empty");
+            }
+            if(data.ContractId == "" || data.ContractId <= 0){
+                err.push("Contract cannot empty");
+            }
+            if(err.length > 0){
+                Swal.fire({
+                    title: 'Error',
+                    text: err.join("<br/>"),
+                    icon: 'error'
+                });
+                return;
+            }
+
+            let url = "/contract/createacrequest";
+            let id = $("#acReqId").val();
+            if(id && id != ""){
+                data.Id = parseInt(id);
+                url = "/contract/updateacrequest"
+            }
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(data),
+                success: function (response) {
+                    if (response.status == 0) {
+                        Swal.fire({
+                            title: 'Success',
+                            text: response.message,
+                            icon: 'success'
+                        }).then((result) => {
+                            history.back();
+                        });
+                        
+                        return;
+                    }
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.message,
+                        icon: 'error'
+                    });
+                },
+                error: function(response){
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.responseJSON.message,
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+    </script>
+}

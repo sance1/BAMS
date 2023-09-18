@@ -1,0 +1,1375 @@
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/appsettings.Development.json
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/appsettings.json
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.exe
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.deps.json
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.runtimeconfig.json
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.runtimeconfig.dev.json
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Antiforgery.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Cookies.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Core.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.OAuth.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authorization.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authorization.Policy.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Authorization.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Forms.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Server.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Web.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Connections.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.CookiePolicy.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cors.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cryptography.Internal.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HostFiltering.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Html.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Connections.Common.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Connections.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Features.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HttpOverrides.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HttpsPolicy.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Identity.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Localization.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Localization.Routing.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Metadata.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Core.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Cors.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Localization.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Razor.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.RazorPages.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.TagHelpers.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Razor.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Razor.Runtime.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCaching.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCompression.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Rewrite.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Routing.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Routing.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.HttpSys.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.IIS.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.IISIntegration.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.Core.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Session.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Common.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Core.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.StaticFiles.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.WebSockets.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.WebUtilities.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.CSharp.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Binder.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.CommandLine.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.FileExtensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Ini.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Json.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.KeyPerFile.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.UserSecrets.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Xml.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Composite.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Embedded.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Physical.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileSystemGlobbing.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Hosting.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Hosting.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Http.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Identity.Core.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Identity.Stores.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Localization.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Localization.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Configuration.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Console.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Debug.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.EventLog.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.EventSource.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.TraceSource.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.ObjectPool.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Options.DataAnnotations.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.WebEncoders.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.JSInterop.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Net.Http.Headers.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.VisualBasic.Core.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.VisualBasic.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Win32.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Win32.Registry.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/mscorlib.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/netstandard.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.AppContext.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Buffers.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.Concurrent.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.NonGeneric.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.Specialized.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.DataAnnotations.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.EventBasedAsync.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.TypeConverter.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Configuration.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Console.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Core.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.Common.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.DataSetExtensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Contracts.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Debug.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.EventLog.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.FileVersionInfo.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Process.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.StackTrace.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.TextWriterTraceListener.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Tools.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.TraceSource.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Tracing.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Drawing.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Drawing.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Dynamic.Runtime.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.Calendars.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.Brotli.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.FileSystem.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.ZipFile.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.DriveInfo.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.Watcher.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.IsolatedStorage.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.MemoryMappedFiles.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Pipelines.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Pipes.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.UnmanagedMemoryStream.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Expressions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Parallel.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Queryable.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Memory.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Http.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.HttpListener.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Mail.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.NameResolution.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.NetworkInformation.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Ping.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Requests.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Security.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.ServicePoint.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Sockets.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebClient.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebHeaderCollection.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebProxy.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebSockets.Client.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebSockets.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Numerics.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Numerics.Vectors.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ObjectModel.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.DispatchProxy.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.ILGeneration.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.Lightweight.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Metadata.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.TypeExtensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.Reader.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.ResourceManager.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.Writer.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.CompilerServices.VisualC.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Handles.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.RuntimeInformation.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.WindowsRuntime.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Intrinsics.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Loader.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Numerics.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Formatters.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Json.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Xml.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Claims.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Algorithms.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Cng.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Csp.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Encoding.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.X509Certificates.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Xml.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Principal.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.SecureString.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ServiceModel.Web.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ServiceProcess.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.CodePages.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.RegularExpressions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Channels.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Overlapped.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Dataflow.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Parallel.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Thread.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.ThreadPool.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Timer.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Transactions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Transactions.Local.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.ValueTuple.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Web.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Web.HttpUtility.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Windows.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.Linq.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.ReaderWriter.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.Serialization.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XDocument.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XmlDocument.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XmlSerializer.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XPath.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XPath.XDocument.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/refs/WindowsBase.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.Views.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.Views.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/AutoMapper.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Text.Encodings.Web.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.Data.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BAMS.Data.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.AssemblyReference.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.GeneratedMSBuildEditorConfig.editorconfig
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.AssemblyInfoInputs.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.AssemblyInfo.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.CoreCompileInputs.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.MvcApplicationPartsAssemblyInfo.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.MvcApplicationPartsAssemblyInfo.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorAssemblyInfo.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorAssemblyInfo.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/staticwebassets/BAMS.StaticWebAssets.Manifest.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/staticwebassets/BAMS.StaticWebAssets.xml
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/scopedcss/bundle/BAMS.styles.css
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.TagHelpers.input.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.TagHelpers.output.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorCoreGenerate.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Project/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorTargetAssemblyInfo.cache
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorTargetAssemblyInfo.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.Views.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.CopyComplete
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.dll
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/BAMS.genruntimeconfig.cache
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/nlog.config
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/BCrypt.Net-Next.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/NLog.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/NLog.Extensions.Logging.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/NLog.Web.AspNetCore.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/ScottBrady91.AspNetCore.Identity.BCryptPasswordHasher.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/EightElements.Utils.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/EightElements.Utils.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/CreateOrUpdate.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Project/CreateUpdate.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Role/CreateOrUpdate.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Role/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/CreateUpdate.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LayoutLogin.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/ChangePassword.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Menu/CreateOrUpdate.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Menu/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/EntityFramework.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.CodeDom.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/AllContract.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/CreateUpdateACReq.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/District/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/District/CreateUpdate.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/UploadACReq.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/AccessDenied.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/NotFound.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/UserAccount/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/School/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/School/CreateUpdate.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/PageText/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/PageText/CreateUpdate.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/UserAccount/Detail.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Security.AccessControl.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Security.Permissions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Security.Principal.Windows.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/System.Windows.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Z.EntityFramework.Extensions.EFCore.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Z.EntityFramework.Plus.EFCore.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Z.Expressions.Eval.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contact/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Admin.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_District.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Educa.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Gov.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_School.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Message/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Bams.Workflows.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/Bams.Workflows.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/EightElements.Services.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/EightElements.Services.pdb
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Teacher/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Report/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Message/CreateMessage.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/ForgotPassword.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/AdministrativeUnit/Index.cshtml.g.cs
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/MimeMapping.dll
+D:/8 Elements New/Projek/BAMS/BAMS/bin/Debug/netcoreapp3.1/PhoneNumbers.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/nlog.config
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.StaticWebAssets.xml
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.deps.json
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.runtimeconfig.json
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.runtimeconfig.dev.json
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Antiforgery.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Cookies.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Core.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.OAuth.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authorization.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authorization.Policy.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Authorization.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Forms.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Server.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Web.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.CookiePolicy.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cors.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HostFiltering.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Html.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Connections.Common.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Connections.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Features.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HttpOverrides.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HttpsPolicy.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Identity.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Localization.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Localization.Routing.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Metadata.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Core.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Cors.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Localization.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Razor.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.RazorPages.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.TagHelpers.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Razor.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Razor.Runtime.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCaching.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCompression.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Rewrite.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Routing.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Routing.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.HttpSys.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.IIS.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.IISIntegration.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.Core.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Session.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Common.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Core.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.StaticFiles.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.WebSockets.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.WebUtilities.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.CSharp.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Binder.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.CommandLine.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.FileExtensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Ini.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Json.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.KeyPerFile.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.UserSecrets.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Xml.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Diagnostics.HealthChecks.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Composite.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileSystemGlobbing.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Hosting.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Http.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Identity.Core.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Identity.Stores.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Localization.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Localization.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Configuration.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Console.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Debug.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.EventLog.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.EventSource.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.TraceSource.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.ObjectPool.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Options.DataAnnotations.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.WebEncoders.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.JSInterop.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Net.Http.Headers.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.VisualBasic.Core.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.VisualBasic.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Win32.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Win32.Registry.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/mscorlib.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/netstandard.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.AppContext.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Buffers.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.Concurrent.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.NonGeneric.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.Specialized.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.DataAnnotations.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.EventBasedAsync.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.TypeConverter.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Configuration.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Console.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Core.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.Common.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.DataSetExtensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Contracts.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Debug.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.EventLog.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.FileVersionInfo.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Process.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.StackTrace.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.TextWriterTraceListener.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Tools.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.TraceSource.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Tracing.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Drawing.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Drawing.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Dynamic.Runtime.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.Calendars.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.Brotli.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.FileSystem.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.ZipFile.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.DriveInfo.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.Watcher.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.IsolatedStorage.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.MemoryMappedFiles.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Pipelines.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Pipes.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.UnmanagedMemoryStream.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Expressions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Parallel.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Queryable.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Memory.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Http.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.HttpListener.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Mail.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.NameResolution.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.NetworkInformation.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Ping.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Requests.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Security.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.ServicePoint.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Sockets.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebClient.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebHeaderCollection.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebProxy.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebSockets.Client.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebSockets.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Numerics.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Numerics.Vectors.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ObjectModel.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.DispatchProxy.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.ILGeneration.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.Lightweight.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Metadata.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.TypeExtensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.Reader.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.ResourceManager.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.Writer.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.CompilerServices.VisualC.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Handles.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.WindowsRuntime.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Intrinsics.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Loader.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Numerics.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Formatters.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Json.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Xml.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Claims.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Algorithms.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Cng.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Csp.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Encoding.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.X509Certificates.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Xml.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Principal.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.SecureString.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ServiceModel.Web.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ServiceProcess.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.CodePages.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.RegularExpressions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Channels.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Overlapped.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Dataflow.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Parallel.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Thread.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.ThreadPool.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Timer.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Transactions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Transactions.Local.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ValueTuple.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Web.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Web.HttpUtility.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Windows.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.Linq.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.ReaderWriter.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.Serialization.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XDocument.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XmlDocument.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XmlSerializer.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XPath.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XPath.XDocument.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/WindowsBase.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.Views.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.Views.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BCrypt.Net-Next.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EntityFramework.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/PhoneNumbers.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/MimeMapping.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/NLog.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/NLog.Extensions.Logging.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/NLog.Web.AspNetCore.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ScottBrady91.AspNetCore.Identity.BCryptPasswordHasher.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.CodeDom.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Security.AccessControl.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Security.Permissions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Security.Principal.Windows.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Text.Encodings.Web.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Windows.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Z.EntityFramework.Extensions.EFCore.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Z.EntityFramework.Plus.EFCore.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Z.Expressions.Eval.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.Data.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Bams.Workflows.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EightElements.Services.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EightElements.Utils.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.Data.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Bams.Workflows.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EightElements.Services.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EightElements.Utils.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.AssemblyReference.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.AssemblyInfoInputs.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.AssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.CoreCompileInputs.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.MvcApplicationPartsAssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.MvcApplicationPartsAssemblyInfo.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorAssemblyInfo.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorAssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/staticwebassets/BAMS.StaticWebAssets.Manifest.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.TagHelpers.input.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.TagHelpers.output.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorCoreGenerate.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/ChangePassword.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/CreateOrUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/ForgotPassword.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/AdministrativeUnit/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contact/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/AllContract.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/CreateUpdateACReq.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/UploadACReq.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/District/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/District/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/AccessDenied.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/NotFound.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Admin.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_District.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Educa.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Gov.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_School.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Menu/CreateOrUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Menu/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Message/CreateMessage.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Message/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/PageText/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/PageText/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Project/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Project/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Report/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Role/CreateOrUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Role/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/School/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/School/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LayoutLogin.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Teacher/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/UserAccount/Detail.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/UserAccount/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorTargetAssemblyInfo.cache
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorTargetAssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.Views.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.CopyComplete
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.dll
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.pdb
+/Users/sanceaenulyakin/Documents/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.genruntimeconfig.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/nlog.config
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.StaticWebAssets.xml
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.deps.json
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.runtimeconfig.json
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.runtimeconfig.dev.json
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Antiforgery.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Cookies.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.Core.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authentication.OAuth.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authorization.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Authorization.Policy.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Authorization.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Forms.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Server.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Components.Web.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.CookiePolicy.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cors.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.DataProtection.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HostFiltering.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Html.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Connections.Common.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Connections.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Http.Features.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HttpOverrides.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.HttpsPolicy.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Identity.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Localization.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Localization.Routing.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Metadata.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Core.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Cors.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Localization.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.Razor.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.RazorPages.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.TagHelpers.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Razor.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Razor.Runtime.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCaching.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.ResponseCompression.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Rewrite.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Routing.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Routing.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.HttpSys.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.IIS.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.IISIntegration.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.Core.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.Session.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Common.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Core.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.StaticFiles.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.WebSockets.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.AspNetCore.WebUtilities.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.CSharp.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Binder.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.CommandLine.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.FileExtensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Ini.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Json.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.KeyPerFile.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.UserSecrets.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Configuration.Xml.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Diagnostics.HealthChecks.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Composite.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.FileSystemGlobbing.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Hosting.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Http.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Identity.Core.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Identity.Stores.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Localization.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Localization.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Configuration.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Console.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.Debug.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.EventLog.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.EventSource.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Logging.TraceSource.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.ObjectPool.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.Options.DataAnnotations.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Extensions.WebEncoders.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.JSInterop.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Net.Http.Headers.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.VisualBasic.Core.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.VisualBasic.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Win32.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/Microsoft.Win32.Registry.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/mscorlib.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/netstandard.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.AppContext.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Buffers.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.Concurrent.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.NonGeneric.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Collections.Specialized.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.DataAnnotations.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.EventBasedAsync.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ComponentModel.TypeConverter.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Configuration.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Console.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Core.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.Common.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.DataSetExtensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Data.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Contracts.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Debug.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.EventLog.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.FileVersionInfo.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Process.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.StackTrace.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.TextWriterTraceListener.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Tools.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.TraceSource.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Diagnostics.Tracing.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Drawing.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Drawing.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Dynamic.Runtime.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.Calendars.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Globalization.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.Brotli.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.FileSystem.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Compression.ZipFile.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.DriveInfo.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.FileSystem.Watcher.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.IsolatedStorage.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.MemoryMappedFiles.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Pipelines.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.Pipes.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.IO.UnmanagedMemoryStream.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Expressions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Parallel.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Linq.Queryable.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Memory.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Http.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.HttpListener.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Mail.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.NameResolution.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.NetworkInformation.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Ping.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Requests.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Security.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.ServicePoint.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.Sockets.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebClient.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebHeaderCollection.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebProxy.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebSockets.Client.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Net.WebSockets.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Numerics.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Numerics.Vectors.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ObjectModel.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.DispatchProxy.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.ILGeneration.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Emit.Lightweight.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Metadata.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Reflection.TypeExtensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.Reader.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.ResourceManager.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Resources.Writer.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.CompilerServices.VisualC.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Handles.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.InteropServices.WindowsRuntime.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Intrinsics.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Loader.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Numerics.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Formatters.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Json.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Runtime.Serialization.Xml.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Claims.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Algorithms.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Cng.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Csp.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Encoding.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.X509Certificates.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Cryptography.Xml.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.Principal.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Security.SecureString.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ServiceModel.Web.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ServiceProcess.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.CodePages.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.Encoding.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Text.RegularExpressions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Channels.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Overlapped.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Dataflow.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Tasks.Parallel.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Thread.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.ThreadPool.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Threading.Timer.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Transactions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Transactions.Local.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.ValueTuple.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Web.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Web.HttpUtility.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Windows.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.Linq.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.ReaderWriter.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.Serialization.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XDocument.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XmlDocument.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XmlSerializer.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XPath.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/System.Xml.XPath.XDocument.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/refs/WindowsBase.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.Views.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.Views.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BCrypt.Net-Next.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EntityFramework.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/PhoneNumbers.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/MimeMapping.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/NLog.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/NLog.Extensions.Logging.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/NLog.Web.AspNetCore.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ScottBrady91.AspNetCore.Identity.BCryptPasswordHasher.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.CodeDom.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Security.AccessControl.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Security.Permissions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Security.Principal.Windows.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Text.Encodings.Web.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/System.Windows.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Z.EntityFramework.Extensions.EFCore.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Z.EntityFramework.Plus.EFCore.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Z.Expressions.Eval.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.Data.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Bams.Workflows.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EightElements.Services.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EightElements.Utils.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/BAMS.Data.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/Bams.Workflows.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EightElements.Services.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/bin/Debug/netcoreapp3.1/EightElements.Utils.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.AssemblyReference.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.AssemblyInfoInputs.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.AssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.CoreCompileInputs.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.MvcApplicationPartsAssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.MvcApplicationPartsAssemblyInfo.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorAssemblyInfo.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorAssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/staticwebassets/BAMS.StaticWebAssets.Manifest.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.TagHelpers.input.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.TagHelpers.output.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorCoreGenerate.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/ChangePassword.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/CreateOrUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/ForgotPassword.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/AdministrativeUnit/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contact/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/AllContract.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/CreateUpdateACReq.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Contract/UploadACReq.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/District/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/District/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/AccessDenied.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Error/NotFound.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Admin.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_District.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Educa.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_Gov.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index_School.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Menu/CreateOrUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Menu/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Message/CreateMessage.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Message/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/PageText/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/PageText/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Project/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Project/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Report/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Role/CreateOrUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Role/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/School/CreateUpdate.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/School/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LayoutLogin.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/Teacher/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/UserAccount/Detail.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/UserAccount/Index.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorTargetAssemblyInfo.cache
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.RazorTargetAssemblyInfo.cs
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.Views.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.csproj.CopyComplete
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.dll
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.pdb
+/Users/sanceaenulyakin/Documents/Work/8 Elements/Projek/Bams/BAMS/obj/Debug/netcoreapp3.1/BAMS.genruntimeconfig.cache

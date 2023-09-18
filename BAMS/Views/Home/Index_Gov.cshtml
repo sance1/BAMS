@@ -1,0 +1,64 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var project = (Project)ViewData["project"];
+    //var logo = district?.Logo ?? "default.png";
+    var districtQty = ViewData["districtQty"];
+    var schoolQty = ViewData["schoolQty"];
+    var teacherQty = ViewData["teacherQty"];
+    var userAccQty = ViewData["userAccQty"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+@*<div class="title-page flex">
+    <h2>@PageText.GetHtml("Home", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>*@
+
+<div class="panel-greeting flex">
+    <div class="col-3">
+        <img src="~/img/content/Seal_of_South_Jakarta.png" class="logo-admin"/>
+    </div>
+    <div class="col-9">
+        <div class="welcoming-text">
+            @PageText.GetHtml("Home_province_txt_welcome_message", clientLanguage)
+            <h2>@project?.Name</h2>
+        </div>
+        <div class="count-wrap flex">
+            <div class="col-3">
+                <div class="student-count">
+                    <h3>@districtQty</h3>
+                    @PageText.GetHtml("Home_province_txt_registered_districts", clientLanguage)
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/administrativeunit?act=new'"><img src="~/img/icon/create-district.png" /> @PageText.GetHtml("Home_province_btn_new_district", clientLanguage) </button>
+            </div>
+            <div class="col-3">
+                <div class="student-count">
+                    <h3>@schoolQty</h3>
+                    @PageText.GetHtml("Home_province_txt_registered_schools", clientLanguage)
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/school?act=new'"><img src="~/img/icon/create-school-acc.png" /> @PageText.GetHtml("Home_province_btn_new_school", clientLanguage) </button>
+            </div>
+            <div class="col-3">
+                <div class="student-count">
+                    <h3>@teacherQty</h3>
+                    @PageText.GetHtml("Home_province_txt_registered_teachers", clientLanguage)
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/account?act=new&roleId=14'"><img src="~/img/icon/create-teacher-acc.png" /> @PageText.GetHtml("Home_province_btn_new_teacher", clientLanguage) </button>
+            </div>
+            <div class="col-3">
+                <div class="student-count">
+                    <h3>@userAccQty</h3>
+                    @PageText.GetHtml("Home_province_txt_registered_students", clientLanguage)
+                </div>
+                <button class="btn-purple btn-icon" onclick="location.href='/school?act=allocate'"><img src="~/img/icon/distribute-activation-code.png" /> @PageText.GetHtml("Home_province_btn_activation_code", clientLanguage) </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="img-bottom flex">
+    <img src="~/img/content/BIBALALA-District-image.jpg" />
+</div>

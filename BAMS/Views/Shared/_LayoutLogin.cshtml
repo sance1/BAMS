@@ -1,0 +1,43 @@
+﻿@using EightElements.Services;
+@inject ITextService PageText
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/assets/favicon.ico" type="image/x-icon">
+    <title>BAMS LOGIN</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="~/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="~/css/adminlte.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body class="login-page">
+    @RenderBody()
+    <script src="~/js/jquery/jquery.min.js"></script>
+    <script src="~/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="~/js/adminlte.js"></script>
+    <script src="~/js/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+
+    var layoutText = {
+        Login_popup_txt_enter_user_and_pass: "@PageText.GetHtml("Login_popup_txt_enter_user_and_pass", "en")",
+        Login_popup_txt_enter_password: "@PageText.GetHtml("Login_popup_txt_enter_password", "en")",
+        Login_popup_txt_enter_your_username: "@PageText.GetHtml("Login_popup_txt_enter_your_username", "en")",
+        Login_popup_txt_user_and_pass_not_correct: "@PageText.GetHtml("Login_popup_txt_user_and_pass_not_correct","en")",
+        Login_popup_txt_password_cannot_be_empty: "@PageText.GetHtml("Login_popup_txt_password_cannot_be_empty", "en")",
+        Login_popup_txt_password_not_same: "@PageText.GetHtml("Login_popup_txt_password_not_same","en")",
+        Login_popup_txt_password_must_be_at_least: "@PageText.GetHtml("Login_popup_txt_password_must_be_at_least","en")"
+    }
+    </script>
+
+    @RenderSection("Scripts", required: false)
+
+
+</body>
+</html>

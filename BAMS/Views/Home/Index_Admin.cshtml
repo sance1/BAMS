@@ -1,0 +1,263 @@
+﻿@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var totalProject = (int) ViewData["TotalProject"];
+    var totalContract = (int) ViewData["TotalContract"];
+    var totalDistrict = (int) ViewData["TotalDistrict"];
+    var totalSchool = (int) ViewData["TotalSchool"];
+    var totalTeacher = (int) ViewData["TotalTeacher"];
+    var totalStudents = (int) ViewData["TotalStudents"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+<div class="panel-greeting flex">
+    <div class="col-3">
+        <img src="~/img/content/home8e.png" class="logo-admin logo-8e"/>
+    </div>
+    <div class="col-9">
+        <div class="welcoming-text">
+            @PageText.GetHtml("Home_admin_txt_welcome_message", clientLanguage)
+            <h2>@PageText.GetHtml("Home_admin_txt_8elements_admin", clientLanguage)</h2>
+        </div>
+        <div class="count-wrap flex">
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@totalProject</h3>
+                    Total Projects
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/projects?act=new'">
+                    <img src="~/img/icon/create-project.png"/> @PageText.GetHtml("Home_admin_btn_new_school", clientLanguage)
+                </button>
+            </div>
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@totalContract</h3>
+                    Total Contracts
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/contract/58?act=new'">
+                    <img src="~/img/icon/create-contract.png"/> @PageText.GetHtml("Home_admin_btn_new_teacher", clientLanguage)
+                </button>
+            </div>
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@totalContract</h3>
+                    Total Districts
+                </div>
+                <button class="btn-orange btn-icon" onclick="location.href='/administrativeunit?act=new'">
+                    <img src="~/img/icon/create-district.png"/> @PageText.GetHtml("Home_admin_btn_activation_code", clientLanguage)
+                </button>
+            </div>
+        </div>
+        <div class="count-wrap flex">
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@totalSchool</h3>
+                    @PageText.GetHtml("Home_admin_txt_registered_schools", clientLanguage)
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@totalTeacher</h3>
+                    @PageText.GetHtml("Home_admin_txt_registered_teachers", clientLanguage)
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="student-count">
+                    <h3>@totalStudents</h3>
+                    @PageText.GetHtml("Home_admin_txt_registered_students", clientLanguage)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="inside flex admin-summary">
+        <div class="col-3">
+            <h2>@PageText.GetHtml("Home_admin_txt_kpi_summary",clientLanguage)</h2>
+        </div>
+        <div class="col-9">
+            <div class="panel-contact">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="repot-col inside">
+                            <div class="col-student">
+                                <h4>@PageText.GetHtml("Home_admin_txt_student_login", clientLanguage) </h4>
+                                <a href="">
+                                    <img src="/img/assets/icon-dw.jpg">
+                                </a>
+                            </div>
+
+                            <div class="counting ">
+                                <div class="date">
+                                    <input type="date" class="date-format" data-date="" data-date-format="DD/MM/YYYY" value="2022-09-12" id="student-login">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </div>
+                                <div class="number">1200</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="repot-col inside">
+                            <div class="col-student">
+                                <h4>@PageText.GetHtml("Home_admin_txt_average_login", clientLanguage)</h4>
+                                <a href="">
+                                    <img src="/img/assets/icon-time.jpg">
+                                </a>
+                            </div>
+
+                            <div class="counting ">
+                                <div class="date">
+                                    <input type="date" class="date-format" value="2022-09-12" id="student-average" data-date="" data-date-format="DD/MM/YYYY">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </div>
+                                <div class="number">12</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="repot-col inside">
+                            <div class="col-student">
+                                <h4>@PageText.GetHtml("Home_admin_txt_student_login_now", clientLanguage)</h4>
+                                <a href="">
+                                    <img src="/img/assets/icon-user.jpg">
+                                </a>
+                            </div>
+
+                            <div class="counting ">
+                                <div class="number">9,860</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="big-col row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="repot-col inside">
+                            <canvas id="chartLevel" class="donutChart"></canvas>
+                            <div class="title-chart">
+                                <h3>@PageText.GetHtml("Home_admin_txt_account_activation", clientLanguage)</h3>
+                                <p class="clr-blue"><span>Activated Accounts</span> : <strong>15.000</strong></p>
+                                <p class="clr-orange"><span>Unactivated Accounts</span> : <strong>5.000</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="repot-col inside">
+                            <canvas id="chartAccount" class="donutChart"></canvas>
+                            <div class="title-chart">
+                                <h3>@PageText.GetHtml("Home_admin_txt_student_learning_level", clientLanguage)</h3>
+                                <p class="clr-blue"><span>Level 1</span> : <strong>7.500</strong></p>
+                                <p class="clr-orange"><span>Level 2</span> : <strong>4.700</strong></p>
+                                <p class="clr-red"><span>Level 3</span> : <strong>2.700</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div class="img-bottom flex">
+        <img src="~/img/content/BIBALALA-Dashboard-image.jpg" />
+    </div>*@
+
+@section Scripts{
+    <script src="~/js/Chart.min.js"></script>
+    <script src="~/js/chartjs-doughnut.js"></script>
+    <script>
+
+        chartLevel = document.getElementById('chartLevel').getContext('2d');
+        var myChart = new Chart(chartLevel, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [15000, 5000],
+                    backgroundColor: ['#4dbefe', '#ee651f'],
+                    label: 'Dataset 1'
+                }],
+                labels: ['Activated', 'Unactived']
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
+                    position: 'right',
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                },
+                plugins: {
+                    doughnutlabel: {
+                        labels: [
+                            {
+                                text: '20000',
+                                font: {
+                                    size: '20',
+                                    family: 'Source Sans Pro, Helvetica, sans-serif',
+                                    weight: 'bold'
+                                }
+                            }, {
+                                text: 'TOTAL',
+                                font: {
+                                    size: '16',
+                                    family: 'Source Sans Pro, Helvetica, sans-serif',
+                                    weight: 'normal'
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+
+        chartAccount = document.getElementById('chartAccount').getContext('2d');
+        var myChart = new Chart(chartAccount, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [7500, 4700, 2700],
+                    backgroundColor: ['#4dbefe', '#ee651f', '#c51e2f'],
+                    label: 'Dataset 1'
+                }],
+                labels: ['Level 1', 'Level 2', 'Level 3']
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
+                    position: 'top',
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                },
+                plugins: {
+                    doughnutlabel: {
+                        labels: [
+                            {
+                                text: '15000',
+                                font: {
+                                    size: '20',
+                                    family: 'Source Sans Pro, Helvetica, sans-serif',
+                                    weight: 'bold'
+                                }
+                            }, {
+                                text: 'TOTAL',
+                                font: {
+                                    size: '16',
+                                    family: 'Source Sans Pro, Helvetica, sans-serif',
+                                    weight: 'normal'
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    </script>
+}

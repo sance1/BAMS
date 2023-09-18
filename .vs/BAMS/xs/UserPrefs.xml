@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{36746737-71D4-4562-ACFC-92A011BB202F}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BAMS/appsettings.json">
+    <Files>
+      <File FileName="BAMS/appsettings.json" Line="4" Column="76" />
+      <File FileName="BAMS/Program.cs" Line="26" Column="43" />
+      <File FileName="BAMS/Controllers/AccountController.cs" Line="1" Column="1" />
+      <File FileName="BAMS/Controllers/AdministrativeUnitController.cs" Line="178" Column="19" />
+      <File FileName="BAMS/Controllers/ContactController.cs" Line="1" Column="1" />
+      <File FileName="BAMS/Controllers/ContractController.cs" Line="315" Column="2" />
+      <File FileName="BAMS/Controllers/DistrictController.cs" Line="510" Column="10" />
+      <File FileName="Bams.Workflows/Default/StudentWorkflow.cs" Line="186" Column="46" />
+      <File FileName="BAMS.Data/Repositories/ActivationCodeRepository.cs" Line="17" Column="43" />
+      <File FileName="Bams.Workflows/Enums/WorkflowResults.cs" Line="18" Column="1" />
+      <File FileName="BAMS/Startup.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BAMS" expanded="True">
+            <Node name="BAMS" expanded="True">
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BAMS PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

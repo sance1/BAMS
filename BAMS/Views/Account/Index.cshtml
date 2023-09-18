@@ -1,0 +1,212 @@
+@using BAMS.Data.Models
+@using EightElements.Services
+@using Microsoft.Extensions.Configuration
+
+@inject ITextService PageText
+@inject IConfiguration _config
+
+@{
+    var id = ViewBag.Id;
+    var data = ViewBag.Account as Account;
+    var roles = ViewBag.Roles as List<Role>;
+    var projects = ViewBag.Projects as List<Project>;
+    var contracts = ViewBag.Contracts as List<Contract>;
+    var districts = ViewBag.Districts as List<District>;
+    var admUnits = ViewBag.AdmUnits as List<AdministrativeUnit>;
+    var schools = ViewBag.Schools as List<School>;
+
+    var userRole = (int) ViewData["UserRole"];
+    var contractId = (int) ViewData["ContractId"];
+    var projectId = (int) ViewData["ContractId"];
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+    var updateAccount = PageText.GetHtml("Account_form_title_txt_update_account",clientLanguage);
+    var createAccount = PageText.GetHtml("Account_form_title_txt_create_account",clientLanguage);
+}
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Account_txt_accounts", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el"/>
+</div>
+
+<a class="btn-orange btn-icon" href="javascript:void(0)" onclick="newAccount(true)">
+    <img src="~/img/icon/create-project.png"/> @PageText.GetHtml("Account_btn_create_account", clientLanguage)
+</a>
+
+<div class="tbl-general tbl-spc pg-account">
+    <table id="account-list" class="display tbl-padding">
+        <thead>
+        <tr id="thead">
+        </tr>
+        </thead>
+        <tfoot>
+        <tr id="tfoot">
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-account">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@(id > 0 ? updateAccount : createAccount)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <form method="post" action="" id="create-form">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">@PageText.GetHtml("Account_form_txt_username", clientLanguage) </label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" name="username" id="username" value="@data?.UserName" onfocus="cekUsername()" placeholder="@PageText.GetHtml("Account_form_txt_username_placeholder", clientLanguage)" autocomplete="off" maxlength="25" autocomplete="off" >
+                                    <input type="hidden" name="id" id="id" value="@id" placeholder="id">
+                                    <small class="text-danger" id="usernameNotif"></small>
+                                </div>
+
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label"> @PageText.GetHtml("Account_form_txt_email", clientLanguage) </label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="email" name="email" id="email" placeholder="@PageText.GetHtml("Account_form_txt_email_placeholder", clientLanguage)" value="@data?.Email" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group row" style="display: @(userRole != 1 ? "none" : "flex")">
+                                <label class="col-sm-3 col-form-label">@PageText.GetHtml("Account_form_txt_project", clientLanguage)</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" name="project-id" id="project-id">
+                                        @foreach (var val in projects)
+                                        {
+                                            if (val.Id == data?.ProjectId || val.Id == projectId)
+                                            {
+                                                <option value="@val.Id" selected>@val.Name</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@val.Id">@val.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            @if (userRole == 1)
+                            {
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">@PageText.GetHtml("Account_form_txt_contract", clientLanguage)</label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control" name="contract-id" id="contract-id">
+                                            @foreach (var val in contracts)
+                                            {
+                                                if (val.Id == data?.ContractId)
+                                                {
+                                                    <option value="@val.Id" selected>@val.Name</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@val.Id">@val.Name</option>
+                                                }
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <input type="hidden" id="contract-id" value="@contractId"/>
+                            }
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label"> @PageText.GetHtml("Account_form_txt_district", clientLanguage) </label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" name="admUnit-id" id="admUnit-id">
+                                        @foreach (var val in admUnits)
+                                        {
+                                            if (val.Id == data?.AdministrativeUnitId)
+                                            {
+                                                <option value="@val.Id" selected>@val.Name</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@val.Id">@val.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label"> @PageText.GetHtml("Account_form_txt_school", clientLanguage) </label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" name="school-id" id="school-id">
+                                        @foreach (var val in schools)
+                                        {
+                                            if (val.Id == data?.SchoolId)
+                                            {
+                                                <option value="@val.Id" selected>@val.Name</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@val.Id">@val.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">@PageText.GetHtml("Account_form_txt_role", clientLanguage) </label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" name="role-id" id="role-id">
+                                        @foreach (var val in roles)
+                                        {
+                                            if (val.Id == data?.RoleId)
+                                            {
+                                                <option value="@val.Id" selected>@val.Name</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@val.Id">@val.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">@PageText.GetHtml("Account_form_txt_organization", clientLanguage) </label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" name="organization" id="organization" placeholder="@PageText.GetHtml("Account_form_txt_organization_placeholder", clientLanguage)" autocomplete="off" value="@data?.Organization">
+                                </div>
+                            </div>
+                            @Html.AntiForgeryToken()
+                            <div class="modal-footer">
+                                <button type="submit" id="save" class="btn-green"></button>
+                                <button type="button" class="btn-grey" data-dismiss="modal">@PageText.GetHtml("Account_form_btn_cancel", clientLanguage)</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/core/account.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+    <script>
+    $(document).ready(function () {
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+            });
+        let act = params.act;
+        let roleId = params.roleId;
+        if (act === "new") newAccount(true)
+        // let id = params.id;
+        // if (id) openModalAccount()
+        getData();
+        if (roleId){
+            $("#role-id").val(roleId).change();
+        }
+    })
+    </script>
+}

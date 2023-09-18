@@ -1,0 +1,57 @@
+﻿@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Contact_txt_contact_us", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>
+
+<div class="panel-contact flex">
+        <div class="col-sm-12 col-lg-4">
+            <a href="/message" class="flex linkCs mssg">
+                <img src="~/img/assets/icon-mssg.png" />
+                <div class="col">                    
+                    @PageText.GetHtml("Contact_txt_send_message", clientLanguage)
+                    <h3> @PageText.GetHtml("Contact_txt_via_dashboard",clientLanguage)</h3>
+                </div>
+            </a>
+            <a href="" class="flex linkCs cs">
+                <img src="~/img/assets/icon-cs.png" />
+                <div class="col">
+                    @PageText.GetHtml("Contact_txt_call_our_cs", clientLanguage)
+                    <h3>@PageText.GetHtml("Contact_number_in_call_our_cs","en")</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <a href="https://wa.me/628170123933" target="_blank" class="flex linkCs wa">
+                <img src="~/img/assets/icon-wa.png" />
+                <div class="col">
+                    @PageText.GetHtml("Contact_txt_whatsupp_us", clientLanguage)
+                    <h3>@PageText.GetHtml("Contact_number_in_whatsapp_us",clientLanguage)</h3>
+                </div>
+            </a>
+            <a href="mailto:bibalala@8elements.net" class="flex linkCs massage">
+                <img src="~/img/assets/icon-sendMessage.png" />
+                <div class="col">
+                    @*<h3>@PageText.GetHtml("Send Messages", clientLanguage)</h3>*@
+                    @*@PageText.GetHtml("via Dashboard", clientLanguage)*@
+                    @PageText.GetHtml("Contact_txt_send_email",clientLanguage)
+                    <h3>@PageText.GetHtml("Contact_txt_bibalala_8elements",clientLanguage)</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-12 col-lg-4 contact-img">
+            <img src="~/img/content/contact-character.jpg" />
+        </div>
+
+        @*<button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-test">
+            @PageText.PortalText("Open Modal", clientLanguage)
+        </button>*@
+             
+
+</div>

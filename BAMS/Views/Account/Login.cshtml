@@ -1,0 +1,85 @@
+﻿@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+@inject ITextService PageText
+@inject IConfiguration _config
+@{
+    Layout = "_LayoutLogin";
+}
+
+
+<div class="login-box">
+    <div class="ico8e flex">
+        <img src="~/img/content/educa.jpg" class="logoEduca" />
+        <img src="~/img/content/logo8e.png" class="logo8el" />
+    </div>
+    <img src="~/img/assets/logo-bibalala-wd.jpg" class="bibalala-wd" />
+    <p class="login-box-msg">
+        @PageText.GetHtml("Login_txt_welcome_message", "en") <br />
+        @PageText.GetHtml("Login_txt_please_login_to_activate", "en")        
+    </p>
+
+    <form method="post" id="login-form" class="form-horizontal">
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">@PageText.GetHtml("Login_txt_username","en")</label>
+            <div class="col-sm-9 input-group">
+                <input autocomplete="off" type="text" name="username" id="username" class="form-control" placeholder="@PageText.GetHtml("Login_txt_username_placeholder","en")">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-user"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">@PageText.GetHtml("Login_txt_password","en")</label>
+            <div class="col-sm-9 input-group">
+                <input  autocomplete="off" type="password" name="password" id="password" class="form-control" placeholder="@PageText.GetHtml("Login_txt_password_placeholder","en")">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 input-group">
+                <a href="/forgot-password">@PageText.GetHtml("Login_txt_forgot_password","en")</a>          
+            </div>
+        </div>
+        <div class="modal-footer">
+            @Html.AntiForgeryToken()
+            <button type="submit" id="login" class="btn-orange"><i class="fa fa-user" aria-hidden="true"></i> &nbsp; @PageText.GetHtml("Login_btn_login","en")</button>
+        </div>
+
+        @*<div class="row">
+            <div class="col-8">
+                <div class="icheck-primary">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">
+                        Remember Me
+                    </label>
+                </div>
+            </div>
+        </div>*@
+    </form>
+    <div class="acc">
+        <img src="~/img/content/bg-fitur.jpg" />
+    </div>
+    @*<p class="mb-1">
+            <a href="forgot-password.html">I forgot my password</a>
+        </p>*@
+</div>
+
+@*<div>
+        <form method="post" id="login-form">
+            <input type="text" name="username" id="username">
+            <input type="password" name="password" id="password">
+            @Html.AntiForgeryToken()
+            <button type="submit">Login</button>
+        </form>
+    </div>*@
+
+@section Scripts{
+    <script src="js/core/account.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+}

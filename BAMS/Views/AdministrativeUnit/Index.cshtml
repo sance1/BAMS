@@ -1,0 +1,606 @@
+﻿@using BAMS.Data.Models;
+@using BAMS.Models
+@using EightElements.Services;
+@using System.Collections.Specialized
+
+@inject ITextService Text
+
+@{
+    var projects = ViewData["Projects"] as List<Project>;
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+    int roleId = (int) ViewData["RoleId"];
+    var projectList = ViewData["ProjectList"] as List<Project>;
+    int projectId = (int) ViewData["ProjectId"];
+}
+
+<style>
+    #drop_zone {
+    background-color: #FFE3E3;
+    border: #B980F0 5px dashed;
+    width: 100%;
+    padding : 60px 0;
+    }
+    #drop_zone p {
+        font-size: 20px;
+        text-align: center;
+        }
+        #btn_upload, #selectfile {
+        display: none;
+        }
+</style>
+
+<div class="title-page flex">
+    <h2>@Text.GetHtml("Administrative_txt_administrative_units", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el"/>
+</div>
+
+<div class="flex btn-top_wrap">
+    <button class="btn-orange btn-icon x-new-button"><img src="~/img/icon/create-project.png" />  @Text.GetHtml("Administrative_btn_new_administrative_unit", clientLanguage)</button>
+    <div class="btn-top_right">
+
+        <button onclick="openModalImport()" class="btn-cyan btn-icon">
+            <img src="~/img/icon/upload-code.png"/> @Text.GetHtml("AdministrativeUnit_btn_upload", clientLanguage)
+        </button>
+    </div>
+</div>
+
+<div class="tbl-general tbl-spc">
+    <table id="administrativeUnitList" class="display tbl-padding">
+        <thead>
+        <tr class="thead">
+        </tr>
+        </thead>
+        <tfoot>
+        <tr class="search tfoot">
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="unit-editor">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-school">
+                            <input type="hidden" id="uid"/>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@Text.GetHtml("Administrative_form_txt_projects", clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <select id="projectUid" class="form-control">
+                                        @foreach (var project in projects)
+                                        {
+                                            <option value="@project.Uid" data-country="@project.Country">@project.Name</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@Text.GetHtml("Administrative_form_txt_subdivision_of",clientLanguage)</label>
+                                <div class="col-sm-8">
+                                    <select id="parentUid" class="form-control"></select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@Text.GetHtml("Administrative_form_txt_name", clientLanguage) </label>
+                                <div class="col-sm-8">
+                                    <input autocomplete="off" type="text" id="name" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@Text.GetHtml("Administrative_form_txt_PIC", clientLanguage) </label>
+                                <div class="col-sm-8">
+                                    <input autocomplete="off" type="text" id="picName" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">@Text.GetHtml("Administrative_form_txt_remark", clientLanguage) </label>
+                                <div class="col-sm-8">
+                                    <input autocomplete="off" type="text" id="remarks" class="form-control"/>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn-green x-save-button" type="button">@Text.GetHtml("Administrative_form_btn_save", clientLanguage)</button>
+                                <button class="btn-grey x-cancel-button" type="button">@Text.GetHtml("Administrative_form_btn_cancel", clientLanguage)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-import">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@Text.GetHtml("AdministrativeUnit_form_title_txt_upload", clientLanguage)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <button onclick="location.href = '/file/Administrative Unit Template.xlsx'" class="btn-white btn-icon">
+                        <img src="~/img/icon/download-A.png"/> @Text.GetHtml("District_form_txt_download_template", clientLanguage)
+                    </button>
+                </div>
+                <div class="form-group row" style="display: @(roleId > 1 ? "none" : "flex")">
+                    <label class="col-sm-2 col-form-label">@Text.GetHtml("District_form_txt_project_inuploaddistrict", clientLanguage) </label>
+                    <div class="col-sm-10">
+                        <select id="projectId" class="form-control">
+                            <option value="">@Text.GetHtml("District_form_dropdown_choose_project", clientLanguage) </option>
+                            @foreach (var project in projectList)
+                            {
+                                if (project.Id == projectId)
+                                {
+                                    <option value="@project.Id" selected>@project.Name</option>
+                                }
+                                else
+                                {
+                                    <option value="@project.Id">@project.Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div id="drop_zone">
+                    <p>@Text.GetHtml("District_form_txt_drop_file", clientLanguage)</p>
+                    <p>@Text.GetHtml("District_form_txt_or", clientLanguage)</p>
+                    <p>
+                        <button type="button" id="btn_file_pick" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-folder-open"></span> @Text.GetHtml("District_form_txt_select_file", clientLanguage)
+                        </button>
+                    </p>
+                    <p id="file_info"></p>
+                    <input type="file" id="selectfile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                    <p id="message_info"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-green" onclick="uploadProcess()">@Text.GetHtml("District_form_btn_upload", clientLanguage)</button>
+                <button type="button" class="btn-grey" data-dismiss="modal">@Text.GetHtml("District_form_btn_cancel_inuploaddistrict", clientLanguage)</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+    <script src="~/js/core/administrative-unit.js" type="application/javascript"></script>
+
+    @*     <script> *@
+    @* var fileobj; *@
+    @* var rawXls; *@
+    @* $("#drop_zone").on("dragover", function (event) { *@
+    @*     event.preventDefault(); *@
+    @*     event.stopPropagation(); *@
+    @*     return false; *@
+    @* }); *@
+    @* $("#drop_zone").on("drop", function (event) { *@
+    @*     event.preventDefault(); *@
+    @*     event.stopPropagation(); *@
+    @*     var tmp = event.originalEvent.dataTransfer.files[0]; *@
+    @*     if (tmp.type !== "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") { *@
+    @*         Swal.fire('Failed!', layoutText.invalidFormatFile , 'error') *@
+    @*         return; *@
+    @*     } *@
+    @*     fileobj = event.originalEvent.dataTransfer.files[0]; *@
+    @*     var fname = fileobj.name; *@
+    @*     var fsize = fileobj.size; *@
+    @*     if (fname.length > 0) { *@
+    @*         document.getElementById('file_info').innerHTML = "File name : " + fname + ' <br>File size : ' + bytesToSize(fsize); *@
+    @*     } *@
+    @*     document.getElementById('selectfile').files[0] = fileobj; *@
+    @*     // document.getElementById('btn_upload').style.display="inline"; *@
+    @* }); *@
+    @* $('#btn_file_pick').click(function () { *@
+    @*     /*normal file pick*/ *@
+    @*     document.getElementById('selectfile').click(); *@
+    @*     document.getElementById('selectfile').onchange = function () { *@
+    @*         var tmp = document.getElementById('selectfile').files[0]; *@
+    @*         if (tmp.type !== "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") { *@
+    @*             Swal.fire('Failed!', layoutText.invalidFormatFile , 'error') *@
+    @*             return; *@
+    @*         } *@
+    @*         fileobj = document.getElementById('selectfile').files[0]; *@
+    @*         var fname = fileobj.name; *@
+    @*         var fsize = fileobj.size; *@
+    @*         if (fname.length > 0) { *@
+    @*             document.getElementById('file_info').innerHTML = "File name : " + fname + ' <br>File size : ' + bytesToSize(fsize); *@
+    @*         } *@
+    @*         // document.getElementById('btn_upload').style.display="inline"; *@
+    @*     }; *@
+    @* }); *@
+    @* *@
+    @* function bytesToSize(bytes) { *@
+    @*     var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']; *@
+    @*     if (bytes == 0) return '0 Byte'; *@
+    @*     var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024))); *@
+    @*     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i]; *@
+    @* } *@
+    @*     const Toast = Swal.mixin({ *@
+    @*         toast: true, *@
+    @*         position: 'top', *@
+    @*         showConfirmButton: false, *@
+    @*         timer: 3000, *@
+    @*         timerProgressBar: true *@
+    @*     }); *@
+    @* *@
+    @* *@
+    @*     $(document).ready(function () { *@
+    @*          *@
+    @*         initDataTable()  *@
+    @* *@
+    @*         $('#projectUid').change(loadAdministrativeUnitList); *@
+    @*         $('#parentUid').click(function() { *@
+    @*              *@
+    @*             if ($('#projectUid').val() == null) { *@
+    @*                 Swal.fire({ *@
+    @*                     title: 'Info', *@
+    @*                     text: 'Please select a project first', *@
+    @*                     icon: 'info' *@
+    @*                 }); *@
+    @*             } *@
+    @*         }) *@
+    @* *@
+    @*         bindButtons(); *@
+    @* *@
+    @*     }); *@
+    @* *@
+    @*     // ***** DataTable Section ***** *@
+    @*     function initDataTable() { *@
+    @*         $.getJSON('/account/GetMenuConfig?menu=District', dynamicColumns); *@
+    @* *@
+    @*     } *@
+    @* *@
+    @*     function dynamicColumns(values){ *@
+    @*         var mapping = values.map(val => { *@
+    @*             let isNoSrc = /no-search/g.exec(val.Class); *@
+    @*             $(".thead").append(`<th class="${val.Class}">${val.Name}</th>`); *@
+    @*             let noSrc = isNoSrc == null ? "" : "no-search"; *@
+    @*             $(".tfoot").append(`<th ${noSrc} class="${val.Class}">${val.Name}</th>`); *@
+    @*             switch (val.Key) { *@
+    @*                 case "Id": *@
+    @*                     return { *@
+    @*                         data: val.Key, name: val.Name, autoWidth: true, visible: false *@
+    @*                     }; *@
+    @*                 case "No": *@
+    @*                     return { *@
+    @*                         data: null, name: "No", autoWidth: true, orderable: false, *@
+    @*                         render: function (data, type, row, meta) { *@
+    @*                             return meta.row + meta.settings._iDisplayStart + 1; *@
+    @*                         } *@
+    @*                     }; *@
+    @*                 default: *@
+    @*                     return { *@
+    @*                         data: val.Key, name: val.Name, autoWidth: true *@
+    @*                     } *@
+    @*             } *@
+    @*         }); *@
+    @*         $(".thead").append(`<th>@Text.GetHtml("District_tbl_head_actions", "en")</th>`); *@
+    @*         $(".tfoot").append(`<th no-search>@Text.GetHtml("District_tbl_head_foot", "en")</th>`); *@
+    @* *@
+    @*         $('#administrativeUnitList').DataTable({ *@
+    @*             autoWidth: true, *@
+    @*             processing: true, *@
+    @*             dom: 'lrtp', *@
+    @*             filter: true, *@
+    @*             ordering: true,             *@
+    @*             serverSide: true, *@
+    @*             ajax: getDataSource(), *@
+    @*             columns: [ *@
+    @*                 ...mapping, *@
+    @*                 { name: 'ActionButtons', data: null, orderable: false, render: getActionButtons, width: "100px" }, *@
+    @*                 { name: 'Uid', data: 'Uid', visible: false } *@
+    @*             ], *@
+    @*             columnDefs: [ *@
+    @*                 { targets: '_all', className: 'dt-head-center' } *@
+    @*             ], *@
+    @*             initComplete: onTableInitComplete *@
+    @*         }); *@
+    @*     } *@
+    @* *@
+    @*     function getDataSource() { *@
+    @*         return { *@
+    @*             url: '/AdministrativeUnit/GetList', *@
+    @*             type: 'POST', *@
+    @*             datatype: 'json' *@
+    @*         } *@
+    @*     } *@
+    @* *@
+    @*     function getActionButtons(data, type, row, meta) {     *@
+    @*         let buttons = ''; *@
+    @*         if (data.IsCodeAvailable) { *@
+    @*             buttons += `<button class="btn-aw org" data-uid="${data.Uid}" onclick="allocate(this, '${data.Uid}')" ><img src="/img/icon/create-contract.png" /> <span class="tooltipText">@Text.GetHtml("Allocate codes", clientLanguage)</span></button>`; *@
+    @*         } *@
+    @*         buttons += ` *@
+    @*             <button class="btn-aw edit" onclick="editUnit(${data.Uid})" ><img src="/img/icon/edit.png" /> <span class="tooltipText">@Text.GetHtml("Edit", clientLanguage)</span></button> *@
+    @*             <button class="btn-aw delete" data-uid="${data.Uid}" onclick="deleteUnit('${data.Uid}')" ><img src="/img/icon/delete.png" /> <span class="tooltipText">@Text.GetHtml("Delete", clientLanguage)</span></button>`; *@
+    @*         return buttons; *@
+    @*     } *@
+    @* *@
+    @*     function getRowNumber(data, type, row, meta) {  *@
+    @*         return meta.row + meta.settings._iDisplayStart + 1; *@
+    @*     } *@
+    @* *@
+    @*     function onTableInitComplete() { *@
+    @*         $('#administrativeUnitList tr.search th').each(function (i) {             *@
+    @*             if ($(this).is('[no-search]')) { *@
+    @*                 $(this).html(''); *@
+    @*                 return; *@
+    @*             } *@
+    @*             var title = $(this).text();             *@
+    @*             $(this).html('<input type="text" class="Search' + title + '" placeholder="Search" />');             *@
+    @*         }); *@
+    @*         this.api().columns().every(function () { *@
+    @*             var that = this; *@
+    @*             if(this.footer() != null){ *@
+    @*                 $('input', this.footer()).on('keyup change clear', delay(function () { *@
+    @*                     if (that.search() !== this.value) { *@
+    @*                         that.search(this.value).draw(); *@
+    @*                     } *@
+    @*                 })); *@
+    @*             } *@
+    @*         }); *@
+    @* *@
+    @*         //move from tfoot to thead *@
+    @*         $('#administrativeUnitList tr.search').appendTo('#administrativeUnitList thead'); *@
+    @*     } *@
+    @* *@
+    @*     // ***** End of DataTable Section ***** *@
+    @* *@
+    @* *@
+    @*     function loadAdministrativeUnitList() { *@
+    @*         initParentList(); *@
+    @*         let projectUid = parseInt($('#projectUid').val()); *@
+    @*         $.ajax({ *@
+    @*             type: 'GET', *@
+    @*             url: `/AdministrativeUnit/GetByProject/${projectUid}`, *@
+    @*             success: function(response) { *@
+    @*                 if (response.status === 'OK') { *@
+    @*                     let $list = $("#parentUid");                     *@
+    @*                     $.each(response.administrativeUnits, function() { *@
+    @*                         $list.append($("<option />").val(this.uid).text(this.name)); *@
+    @*                     }); *@
+    @*                     let uid = $list.data('uid'); *@
+    @*                     if (uid > 0) { *@
+    @*                         $list.val(uid); *@
+    @*                     } *@
+    @*                 }                 *@
+    @*             } *@
+    @*         }); *@
+    @*     } *@
+    @* *@
+    @* *@
+    @*     function bindButtons() { *@
+    @*         $('.x-new-button').click(newUnit); *@
+    @*         $('#unit-editor .x-save-button').click(saveUnit); *@
+    @*         $('#unit-editor .x-cancel-button').click(hideEditor); *@
+    @*     } *@
+    @* *@
+    @*     function reloadList() { *@
+    @*         $('#administrativeUnitList').DataTable().ajax.reload(null, false); *@
+    @*     } *@
+    @* *@
+    @*     function initEditor() { *@
+    @*         $("#uid").val(0); *@
+    @*         $("#projectUid").val(null); *@
+    @*         initParentList();         *@
+    @*         $("#name").val(''); *@
+    @*         $("#picName").val(''); *@
+    @*         $("#remarks").val(''); *@
+    @*     } *@
+    @* *@
+    @*     function initParentList() { *@
+    @*         let $list = $("#parentUid"); *@
+    @*         $list.html(''); *@
+    @*         $list.data('uid', 0); *@
+    @*         $list.append($("<option />").val(0).text('')); *@
+    @*     } *@
+    @* *@
+    @* *@
+    @*     function showEditor() { *@
+    @*         $('#unit-editor').modal('show'); *@
+    @*     } *@
+    @* *@
+    @*     function hideEditor(){ *@
+    @*         $("#unit-editor").modal("hide"); *@
+    @*         initEditor(); *@
+    @*     } *@
+    @* *@
+    @*     function setEditorTitle(title) { *@
+    @*         $('#unit-editor .modal-title').text(title); *@
+    @*     } *@
+    @* *@
+    @*     function newUnit() { *@
+    @*         initEditor(); *@
+    @*         setEditorTitle("New Administrative Unit");         *@
+    @*         showEditor(); *@
+    @*     } *@
+    @* *@
+    @*      *@
+    @*     function editUnit(uid) { *@
+    @*         initEditor(); *@
+    @* *@
+    @*         $.ajax({ *@
+    @*             type: "GET", *@
+    @*             url: `/get-administrative-unit/${uid}`, *@
+    @*             dataType: "json", *@
+    @*             success: function (response) { *@
+    @*                 if (response.status != 'OK') { *@
+    @*                     if (response.message == null) { *@
+    @*                         response.message = "Failed"; *@
+    @*                     } *@
+    @*                     Swal.fire({ *@
+    @*                         title: 'Error', *@
+    @*                         text: response.message, *@
+    @*                         icon: 'error' *@
+    @*                     }); *@
+    @*                     return; *@
+    @*                 } *@
+    @* *@
+    @*                 let unit = response.administrativeUnit; *@
+    @*                 setEditorTitle("Edit Administrative Unit"); *@
+    @*                 $('#uid').val(unit.uid); *@
+    @*                 $('#projectUid').val(unit.projectUid); *@
+    @*                 loadAdministrativeUnitList(); *@
+    @*                 $('#parentUid').data('uid', unit.parentUid); *@
+    @*                 $('#name').val(unit.name);                 *@
+    @*                 $('#picName').val(unit.picName); *@
+    @*                 $('#remarks').val(unit.remarks); *@
+    @* *@
+    @*                 showEditor(); *@
+    @*             }, *@
+    @*             error: function (response) { *@
+    @*                 if (response.message == null) { *@
+    @*                     response.message = "Edit School Function Error"; *@
+    @*                 } *@
+    @*                 Swal.fire({ *@
+    @*                     title: 'Error', *@
+    @*                     text: response.message, *@
+    @*                     icon: 'error' *@
+    @*                 }); *@
+    @*             } *@
+    @*         }); *@
+    @*     } *@
+    @* *@
+    @*     function saveUnit(){ *@
+    @* *@
+    @*         let uid = parseInt($("#uid").val()); *@
+    @* *@
+    @*         let administrativeUnit = { *@
+    @*             uid: uid, *@
+    @*             projectUid: parseInt($("#projectUid").val()), *@
+    @*             parentUid: parseInt($("#parentUid").val()), *@
+    @*             name: $("#name").val(),             *@
+    @*             pic: $("#picName").val(), *@
+    @*             remarks: $("#remarks").val(), *@
+    @*         }; *@
+    @* *@
+    @*         let validationResult = validateInput(administrativeUnit) *@
+    @*         if (validationResult.length > 0) { *@
+    @*             Swal.fire({ *@
+    @*                 title: 'Data Validation', *@
+    @*                 html: validationResult.join('<br>'), *@
+    @*                 icon: 'error' *@
+    @*             }); *@
+    @*             return; *@
+    @*         } *@
+    @* *@
+    @*         let url = uid == 0 *@
+    @*             ? '/AdministrativeUnit/Create' *@
+    @*             : '/AdministrativeUnit/AdministrativeUnit'; *@
+    @* *@
+    @*         sendRequest(url, JSON.stringify(administrativeUnit)); *@
+    @*     } *@
+    @* *@
+    @* *@
+    @*     function validateInput(input) { *@
+    @*         let err = []; *@
+    @*         if (isNaN(input.projectUid)) { *@
+    @*             err.push("Please select a project"); *@
+    @*         } *@
+    @*         if(input.name == ""){ *@
+    @*             err.push("Name cannot empty"); *@
+    @*         } *@
+    @*         if(input.PIC == ""){ *@
+    @*             err.push("PIC cannot empty"); *@
+    @*         } *@
+    @*         if(input.Students <= 0){ *@
+    @*             err.push("Students cannot empty"); *@
+    @*         } *@
+    @*         return err; *@
+    @*     } *@
+    @* *@
+    @*     function sendRequest(url, payload) { *@
+    @*         Swal.showLoading(); *@
+    @* *@
+    @*         $.ajax({ *@
+    @*             type: "POST", *@
+    @*             url: url, *@
+    @*             contentType: 'application/json; charset=utf-8', *@
+    @*             dataType: "json", *@
+    @*             data: payload, *@
+    @*             success: function (response) { *@
+    @*                 Swal.close(); *@
+    @*                 if (response.status == 'OK') { *@
+    @*                     reloadList(); *@
+    @*                     hideEditor(); *@
+    @*                     Toast.fire({ *@
+    @*                         icon: 'success', *@
+    @*                         title: 'The administrative unit data has been saved successfully.' *@
+    @*                     }); *@
+    @*                     return; *@
+    @*                 } *@
+    @*                 Swal.fire({ *@
+    @*                     title: 'Error', *@
+    @*                     text: response.message, *@
+    @*                     icon: 'error' *@
+    @*                 }); *@
+    @*             }, *@
+    @*             error: function(response){ *@
+    @*                 Swal.fire({ *@
+    @*                     title: 'Error', *@
+    @*                     text: response.responseJSON.message, *@
+    @*                     icon: 'error' *@
+    @*                 }); *@
+    @*             } *@
+    @*         }); *@
+    @*     } *@
+    @* *@
+    @*     function deleteUnit(uid) { *@
+    @*         Swal.fire({ *@
+    @*             title: 'Delete Confirmation', *@
+    @*             text: 'Are you sure you want to delete the administrative unit?', *@
+    @*             icon: 'warning', *@
+    @*             showDenyButton: true, *@
+    @*             confirmButtonText: 'Yes' *@
+    @*         }).then((result) => { *@
+    @*             if (result.isConfirmed) { *@
+    @*                 $.ajax({ *@
+    @*                     type: "GET", *@
+    @*                     url: `/delete-administrative-unit/${uid}`, *@
+    @*                     dataType: "json", *@
+    @*                     success: function (response) { *@
+    @*                         console.log(response); *@
+    @*                         if (response.status == 'OK') { *@
+    @*                             reloadList(); *@
+    @*                             Toast.fire({ *@
+    @*                                 icon: 'success', *@
+    @*                                 title: 'Administrative unit has been deleted successfully' *@
+    @*                             }) *@
+    @*                             return; *@
+    @*                         } *@
+    @*                         Swal.fire({ *@
+    @*                             title: 'Failed', *@
+    @*                             text: response.message, *@
+    @*                             icon: 'success' *@
+    @*                         }); *@
+    @*                     }, *@
+    @*                     error: function (response) { *@
+    @*                         if(response.message == null) @Text.GetHtml("Failed", clientLanguage); *@
+    @*                         Swal.fire({ *@
+    @*                             title: 'Error', *@
+    @*                             text: response.message, *@
+    @*                             icon: 'error' *@
+    @*                         }); *@
+    @*                     } *@
+    @*                 }); *@
+    @*             } *@
+    @*         });     *@
+    @*     } *@
+    @* *@
+    @* </script> *@
+
+}

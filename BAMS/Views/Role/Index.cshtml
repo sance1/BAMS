@@ -1,0 +1,48 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+@using Microsoft.Extensions.Configuration
+
+@inject ITextService PageText
+@inject IConfiguration _config
+@{
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Role_txt_roles", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>
+
+<button class="btn-orange btn-icon" onclick="create()"><img src="~/img/icon/create-project.png" /> @PageText.GetHtml("Role_txt_new_role", clientLanguage)</button>
+
+<div class="tbl-general tbl-spc">
+    <table id="role-list" class="display tbl-padding">
+        <thead>
+            <tr>
+                <th>@PageText.GetHtml("Role_tbl_txt_id", clientLanguage)</th>
+                <th>@PageText.GetHtml("Role_tbl_txt_role_name", clientLanguage)</th>
+                <th>@PageText.GetHtml("Role_tbl_txt_access_level", clientLanguage)</th>
+                <th>@PageText.GetHtml("Role_tbl_txt_actions", clientLanguage)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>@PageText.GetHtml("Role_tbl_txt_id", clientLanguage)</th>
+                <th>@PageText.GetHtml("Role_tbl_txt_role_name", clientLanguage)</th>
+                <th>@PageText.GetHtml("Role_tbl_txt_access_level", clientLanguage)</th>
+                <th>@PageText.GetHtml("Role_tbl_txt_actions", clientLanguage)</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+
+@section Scripts{
+    <script src="~/js/core/role.js?version=@_config["Resources:Version"]" type="application/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            getData();
+        })
+    </script>
+}

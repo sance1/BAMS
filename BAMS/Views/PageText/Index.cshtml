@@ -1,0 +1,41 @@
+﻿@*PageText Index*@
+@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+}
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Pagetexts_txt_pagetexts", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el"/>
+</div>
+
+<button class="btn-orange btn-icon" onclick="create()">
+    <img src="~/img/icon/create-project.png"/> @PageText.GetHtml("Pagetexts_txt_new_pagetext", clientLanguage)
+</button>
+
+<div class="tbl-general tbl-spc">
+    <table id="page-text-list" class="display tbl-padding">
+        <thead>
+        <tr>
+            <th>@PageText.GetHtml("Pagetexts_tbl_txt_key", clientLanguage)</th>
+            <th>@PageText.GetHtml("Pagetexts_tbl_txt_text", clientLanguage)</th>
+            <th>@PageText.GetHtml("Pagetexts_tbl_txt_language_codes", clientLanguage)</th>
+            <th>@PageText.GetHtml("Pagetexts_tbl_txt_actions", clientLanguage)</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>@PageText.GetHtml("Pagetexts_tbl_txt_key", clientLanguage)</th>
+            <th>@PageText.GetHtml("Pagetexts_tbl_txt_text", clientLanguage)</th>
+            <th>@PageText.GetHtml("Pagetexts_tbl_txt_language_codes", clientLanguage)</th>
+            <th>@PageText.GetHtml("Pagetexts_tbl_txt_actions", clientLanguage)</th>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+@section Scripts{
+    <script src="~/js/core/page-text.js" type="application/javascript"></script>
+}

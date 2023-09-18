@@ -1,0 +1,73 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+
+@inject ITextService PageText
+@{
+    var id = ViewBag.Id;
+    var data = ViewBag.Role as Role;
+    var clientLanguage = (string) ViewBag.ClientLanguage;
+    var updateRole = @PageText.GetHtml("Role_title_update_role", clientLanguage);
+    var createRole = PageText.GetHtml("Role_title_create_role", clientLanguage);
+}
+
+<div class="col-6">
+    <div class="modal-content" style="box-shadow:none;">
+        <div class="modal-header">
+            <h4 class="modal-title">@(id > 0 ? updateRole : createRole)</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-horizontal">
+                <div class="card-body">
+
+                    <form method="post" action="" id="create-form">
+                        <div class="form-group row">
+                            <input type="hidden" name="id" id="id" value="@id" placeholder="id">
+                            <label class="col-sm-2 col-form-label">@PageText.GetHtml("Role_txt_name", clientLanguage)  </label>
+                            <div class="col-sm-9">
+                                <input autocomplete="off" class="form-control" type="text" name="name" id="create-name" value="@data?.Name" placeholder="name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">@PageText.GetHtml("Role_txt_access", clientLanguage)  </label>
+                            <div class="col-sm-9">
+                                <input autocomplete="off" class="form-control" type="number" name="access" id="create-access" value="@data?.AccessLevel" placeholder="access">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            @Html.AntiForgeryToken()
+                            <button class="btn-orange" type="submit">@(id > 0 ? PageText.GetHtml("Role_txt_update", clientLanguage) : PageText.GetHtml("Role_txt_create", clientLanguage))</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pg-create-role">
+    <h2>@PageText.GetHtml("Role_txt_list_menu", clientLanguage)</h2>
+    <table id="tbl-create-role" class="display">
+        <thead>
+            <tr>
+                <td>@PageText.GetHtml("Role_tbl_txt_name", clientLanguage)</td>
+                <td>@PageText.GetHtml("Role_tbl_txt_group", clientLanguage)</td>
+                <td>@PageText.GetHtml("Role_tbl_txt_access", clientLanguage)</td>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+
+
+
+@section Scripts{
+    <script src="~/js/core/role.js" type="application/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            getMenu();
+        })
+    </script>
+}

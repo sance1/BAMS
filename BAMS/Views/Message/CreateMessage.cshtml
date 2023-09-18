@@ -1,0 +1,261 @@
+﻿@using BAMS.Data.Models;
+@using EightElements.Services;
+@inject ITextService PageText
+@{
+    var message = (Message)ViewData["Message"];
+    var action = (string)ViewData["Action"];
+    var toTeacher = (bool)ViewData["ToTeacher"];
+    var toAdmin = (bool)ViewData["ToAdmin"];
+    var toDistrict = (bool)ViewData["ToDistrict"];
+    var toProvince = (bool)ViewData["ToProvince"];
+
+
+    var textMessage = "";
+    var textTitle = "";
+    var recipients = "";
+    if (message != null)
+    {
+        textMessage = $"<p>&nbsp;</p><blockquote>{message.Body}</blockquote>";
+        textTitle = message.Title;
+        if (action == "reply")
+        {
+            recipients = message.Account.UserName;
+        }
+        else if (action == "forward")
+        {
+            recipients = "";
+        }
+    }
+
+    var clientLanguage = (string)ViewBag.ClientLanguage;
+}
+
+<div class="title-page flex">
+    <h2>@PageText.GetHtml("Message_txt_send_message", clientLanguage)</h2>
+    <img src="~/img/content/logo8e.png" class="logo8el" />
+</div>
+
+<div class="panel-message flex">
+
+    <div class="col-9 no-pad">
+        <div class="full-message">
+            <div class="flex head-message">
+                <div class="col-9 no-pad">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">@PageText.GetHtml("Message_txt_to", clientLanguage) </label>
+                        <div class="col-sm-10 no-pad">
+                            @* <input class="form-control" type="text" id="to" placeholder="" value="@recipients"> *@
+                            <select id="to" class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+                            </select>
+                        </div>
+                    </div>
+                    @if (toAdmin || toProvince || toTeacher || toDistrict)
+                    {
+                        <div class="form-group row message-option">
+                            <div class="col-sm-2">&nbsp; </div>
+                            <div class="col-sm-10 no-pad">
+                                @if (toAdmin)
+                                {
+                                    <label>
+                                        @PageText.GetHtml("Message_radiobutton_txt_send_to_bibalala_admin", clientLanguage) <input type="checkbox" name="choice" id="toAdmin" />
+                                    </label>
+                                }
+                                @if (toProvince)
+                                {
+                                    <label>
+                                        @PageText.GetHtml("Message_radiobutton_txt_send_to_all_province", clientLanguage) <input type="checkbox" name="choice" id="allProvince" />
+                                    </label>
+                                }
+                                @if (toTeacher)
+                                {
+                                    <label>
+                                        @PageText.GetHtml("Message_radiobutton_txt_send_to_all_teachers", clientLanguage) <input type="checkbox" name="choice" id="allTeacher" />
+                                    </label>
+                                }
+                                @if (toDistrict)
+                                {
+                                    <label>
+                                        @PageText.GetHtml("Message_radiobutton_txt_send_to_all_district", clientLanguage) <input type="checkbox" name="choice" id="allDistrict" />
+                                    </label>
+                                }
+
+                            </div>
+                        </div>
+                    }
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">@PageText.GetHtml("Message_txt_title_whencreatemessage", clientLanguage) </label>
+                        <div class="col-sm-10 no-pad">
+                            <input class="form-control" type="text" id="title" placeholder="" value="@textTitle">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 head-right">
+                    <span class="date">@DateTime.Now.ToString("dd/MM/yyyy")</span>
+                </div>
+            </div>
+            <div class="message-inbox">
+                <textarea id="bodyMessage" placeholder="@PageText.GetHtml("Message_txt_type_text_here", clientLanguage)">@textMessage</textarea>
+            </div>
+
+            <div class="attachment">
+                <span class="text-limit">
+                    <span id="char-count">0</span>@PageText.GetHtml("Message_txt_300_character", clientLanguage)
+                </span>
+                <div class="attachFile">
+                    <label for="attachFileMessage">
+                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                        @PageText.GetHtml("Message_txt_attachment", clientLanguage)
+                    </label>
+                    <input type="file" id="attachFileMessage" hidden accept=".xlsx,.xls,.jpg,.png,.bmp,.doc,.docx,.pdf" multiple />
+                    <span id="file-attach" class="file-attach">@PageText.GetHtml("Message_txt_no_file_choosen", clientLanguage)</span>
+                </div>
+                <div class="btn-message flex">
+                    <button class="btn-orange" onclick="sendMessage()"> @PageText.GetHtml("Message_btn_send", clientLanguage)</button>
+                    <button class="btn-grey" onclick="goBack()"> @PageText.GetHtml("Message_btn_cancel", clientLanguage)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#bodyMessage').summernote();
+            $('#bodyMessage').on('summernote.change summernote.keyup', function(we, contents, $editable){
+                let count = $(this).summernote('code').length;
+                $("#char-count").html(count);
+            });
+            initAutoComplete()
+        });
+
+        function initAutoComplete() {
+          $('#to').select2({
+          ajax: {
+              delay: 500,
+              url: '/message/SearchName',
+              data: function (params) {
+                  return {
+                      search: params.term
+                  }
+                  },
+                  processResults: function (data) {
+                  return {
+                      results: data
+                  };
+                  },
+                  }
+          });
+        }
+
+        function goBack(){
+            location.href = "/message";
+        }
+
+        function sendMessage(){
+            let to = $("#to").val();
+            let title = $("#title").val();
+            let bodyText = $("#bodyMessage").summernote('code');
+            let allTeacher = $("#allTeacher").is(":checked")
+            let toAdmin = $("#toAdmin").is(":checked")
+            let allDistrict = $("#allDistrict").is(":checked")
+            let allProvince = $("#allProvince").is(":checked")
+  
+
+            if(to.length == 0 && !allTeacher && !toAdmin && !allDistrict && !allProvince){
+                Swal.fire({
+                    title: 'Error',
+                    text: "@PageText.GetHtml("Message_popup_txt_recipient_empty",clientLanguage)",
+                    icon: 'error'
+                });
+                return;
+            }
+            if(title == ""){
+                Swal.fire({
+                    title: 'Error',
+                    text: "@PageText.GetHtml("Message_popup_txt_title_empty",clientLanguage)",
+                    icon: 'error'
+                });
+                return;
+            }
+            if(bodyText == ""){
+                Swal.fire({
+                    title: 'Error',
+                    text: "@PageText.GetHtml("Message_popup_txt_body_empty",clientLanguage)",
+                    icon: 'error'
+                });
+                return;
+            }
+
+            let formData = new FormData();
+            formData.append('Title',title);
+            formData.append('Body',bodyText);
+            formData.append('SenderId',0);
+            formData.append('AllTeacher',allTeacher);
+            formData.append('AllDistrict',allDistrict);
+            formData.append('ToAdmin',toAdmin);
+            formData.append('AllProvince', allProvince);
+   
+
+            to.map(val => {
+                formData.append('Recipients[]',val.trim());
+            })
+            // for(let acc of to.split(',')){
+            //     if (acc){
+            //      formData.append('Recipients[]',acc.trim());
+            //     }
+            // }
+            for(let fl of $("#attachFileMessage")[0].files){
+                formData.append('Attachments',fl);
+            }
+
+            Swal.showLoading();
+            $.ajax({
+                type: "POST",
+                url: '/message/create',
+                data: formData,
+                cache: false,
+				contentType: false,
+				processData: false,
+                success: function (response) {
+                    Swal.close();
+                    if (response.status == 0) {
+                        Swal.fire({
+                            title: 'Success',
+                            text: "@PageText.GetHtml("Message_popup_txt_sent_seccessfully","en")",
+                            icon: 'success'
+                        }).then((result) => {
+                            location.href = "/message";
+                        });
+
+                        return;
+                    }
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.message,
+                        icon: 'error'
+                    });
+                },
+                error: function(response){
+                    Swal.close();
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.responseJSON.message,
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+
+        const actualBtn = document.getElementById('attachFileMessage');
+
+        const fileChosen = document.getElementById('file-attach');
+
+        actualBtn.addEventListener('change', function () {
+            fileChosen.textContent = this.files[0].name
+        })
+    </script>
+
+}

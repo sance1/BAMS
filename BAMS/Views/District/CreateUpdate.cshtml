@@ -1,0 +1,129 @@
+﻿@using BAMS.Data.Models;
+@using BAMS.Models
+@{
+    var accounts = (List<ReadAccountDTO>)ViewData["accounts"];    
+    var district = (District)ViewData["District"];
+    var title = district == null ? "Create" : "Update";
+    long uid = district?.Uid ?? 0;
+
+    long projectUid = (long)ViewData["ProjectUid"];
+    var projectList = ViewData["ProjectList"] as List<Project>;
+}
+@*District Page*@
+
+    <h2>@title District</h2>
+    <input type="hidden" id="uid" value="@uid" />
+
+    <div class="form-district col-3" >
+        <label>Project :</label>
+        <select id="projectUid" class="form-control">    
+            @foreach(var project in projectList)
+            {
+                if (project.Uid == projectUid)
+                {
+                    <option selected value="@project.Uid">@project.Name</option>
+                }
+                else
+                {
+                    <option value="@project.Uid">@project.Name</option>        
+                }
+            }
+        </select>
+
+        <label>Nama :</label>
+        <input type="text" id="name" value="@district?.Name" class="form-control" />
+
+        <label>PIC :</label>
+        <input type="text" id="pic" value="@district?.PIC" class="form-control" />       
+                            
+        <label>Remark :</label>
+        <input type="text" id="remarks" value="@district?.Remarks" class="form-control" /> 
+        
+        <div class="form-group mt-3">
+            <button id="save" type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-danger" onclick="goBack()">Cancel</button>
+        </div>
+        
+    </div>
+    
+
+@section Scripts{
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#save").click(save);
+        });
+
+        function save() {
+            let uid = parseInt($("#uid").val());
+
+            let district = {
+                uid: uid,
+                projectUid: parseInt($("#projectUid").val()),
+                name: $("#name").val(),
+                pic: $("#pic").val(),
+                students: parseInt($("#students").val()),
+                remarks: $("#remarks").val(),
+            };
+
+            let validationResult = validateInput(district);
+            if (validationResult.length > 0) {
+                Swal.fire({
+                    title: 'Error',
+                    html: validationResult.join('<br>'),
+                    icon: 'error'
+                });
+                return;
+            }
+
+            let url = uid == '0'
+                ? '@Url.Action("Create", "district")'
+                : '@Url.Action("Update", "district")';
+
+            sendRequest(url, JSON.stringify(district));
+        }
+
+        function validateInput(input) {
+            let err = [];
+            if(input.name == ""){
+                err.push("District name cannot be empty");
+            }
+            return err;
+        }
+
+        function sendRequest(url, payload) {
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: 'application/json; charset=utf-8',
+                data: payload,
+                success: function (response) {
+                    if (response.status == 0) {
+                        Swal.fire({
+                            title: 'Success',
+                            text: response.message,
+                            icon: 'success'
+                        }).then((result) => {
+                            history.back();
+                            location.href = "/District";
+                        });
+                    }
+                },
+                error: function(response){
+                    Swal.fire({
+                        title: 'Error',
+                        text: response.message,
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+        
+        function goBack(){
+            history.back();
+        }
+
+    </script>
+}
