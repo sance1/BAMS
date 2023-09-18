@@ -25,10 +25,7 @@
 
 - [Contact Me](#-contact-me)
   
-
-   
-  
-<br><br><br><br>
+<br>
 <!-- ContactMe -->
 ## 📞 Contact Me
 <p align="left"> <img src="https://scontent.fcgk3-1.fna.fbcdn.net/v/t39.30808-6/342019419_573017321476798_3161839677736738785_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGNWY8b9BrquwhhF3TxXPNztUOss6oL6im1Q6yzqgvqKddnze0LRoZHlfben4JtEDaYjVYmsZ7i_TSXeRIW4xCL&_nc_ohc=4gPzy4P4ntEAX9ga3cC&_nc_zt=23&_nc_ht=scontent.fcgk3-1.fna&oh=00_AfCt7onsQrn8nRXWWCCj7axcINn5H4VMPHWoBdgvWyg0Sg&oe=64E55F7D" alt="Sance Aenul Yakin" width="200" height="250"/> </p>
