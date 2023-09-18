@@ -22,22 +22,10 @@
 <!-- Features -->
 ## 🧐 Features
 
-- [Database](#-database)
+
 - [Contact Me](#-contact-me)
   
-<!-- Database -->
-## 📦 Database
 
-Create a database first so that all the facilities of the application can be used
-
-1. Create database with name “EmployeDB”
-2. Change your database connection in "appsetting.json" file
-3. Create table “Employee” with design
-   
-The design table look like the following 
- - Id(PK,int,not null)
- - Name(nvarchar(50), null)
- - Department(nvarchar(50), null)
    
   
 <br><br><br><br>
